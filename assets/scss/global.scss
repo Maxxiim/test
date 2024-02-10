@@ -1,0 +1,40 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a,
+ul,
+li {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Cera Pro', sans-serif;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(61, 61, 61, 1);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 15px;
+}
