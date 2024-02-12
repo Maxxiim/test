@@ -18,6 +18,8 @@ p {
 a,
 ul,
 li {
+    padding: 0;
+    margin: 0;
     list-style: none;
     text-decoration: none;
     color: inherit;
@@ -33,8 +35,4 @@ body {
     color: rgba(61, 61, 61, 1);
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1300px;
-    padding: 0 15px;
-}
+.page {}
