@@ -1,0 +1,115 @@
+.slider {}
+
+.page__slider {
+    padding-top: 12px;
+}
+
+.slider__inner {
+    @include container();
+}
+
+.slider__list {
+    position: relative;
+    height: 450px;
+    padding-top: 68px;
+    padding-left: 43px;
+    background: linear-gradient(134.56deg, rgba(245, 245, 245, 0.5) -23.457%, rgba(245, 245, 245, 0.5) 107.508%);
+}
+
+.slider__list-item {
+    display: none;
+    justify-content: space-between;
+}
+
+.slider__list-item_active {
+    display: flex;
+}
+
+.slider__list-item-text {}
+
+
+.slider__list-text_welcome {
+    margin-bottom: 7px;
+    max-width: 205px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+}
+
+.slider__list-text_title {
+    margin-bottom: 5px;
+    display: block;
+    max-width: 650px;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+
+    & span {
+        color: rgb(70, 163, 88);
+    }
+}
+
+.slider__list-text_description {
+    margin-bottom: 55px;
+    max-width: 530px;
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.slider__list-text-btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding: 11px 27px 9px 26px;
+    cursor: pointer;
+    max-width: 150px;
+    border-radius: 6px;
+    background: rgb(70, 163, 88);
+    border: none;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background: rgb(49, 119, 63);
+    }
+}
+
+.slider__list-item-img {
+    position: absolute;
+    right: -13px;
+    bottom: -18px;
+}
+
+.slider__list-item-img_flower {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 520px;
+}
+
+.slider__list-item-points {}
+
+.points {
+    position: absolute;
+    bottom: 17px;
+    right: 50%;
+    display: flex;
+    gap: 8px;
+}
+
+.point {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    background: rgba(70, 163, 88, 0.3);
+    border-radius: 50%;
+}
+
+.point-active {
+    background: rgb(70, 163, 88);
+}

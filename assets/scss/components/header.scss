@@ -9,6 +9,8 @@
     align-items: center;
     justify-content: space-between;
     @include container();
+    padding-bottom: 13px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
 }
 
 // header logo start
@@ -107,7 +109,7 @@
         background: rgb(70, 163, 88);
 
         color: rgb(255, 255, 255);
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 500;
         line-height: 13px;
 
