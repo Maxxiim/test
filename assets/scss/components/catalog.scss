@@ -5,6 +5,7 @@
 }
 
 .catalog__inner {
+    display: flex;
     @include container();
 }
 
@@ -76,20 +77,115 @@
     line-height: 16px;
 }
 
-.catalog-filter__pricerange-rangeinput {
-    cursor: pointer;
-    width: 30px;
-}
+// =========================================
+// input range start
 
-.catalog-filter__pricerange-price {
+.price-input {
     margin-bottom: 16px;
 }
 
-.catalog-filter__pricerange-price-min {}
+.price-input__field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 
-.catalog-filter__pricerange-price_dash {}
 
-.catalog-filter__pricerange-price-max {}
+
+.price-input__field input {
+    background: none;
+    max-width: 65px;
+    text-align: center;
+    color: rgb(70, 163, 88);
+    outline: none;
+    border: none;
+    -moz-appearance: textfield;
+}
+
+
+
+.price-input__field-text {}
+
+.price-input__field-min {}
+
+.price-input__field-separator {
+    width: 7px;
+    color: rgb(70, 163, 88);
+}
+
+.price-input__field-max {}
+
+.price-input__slider {
+    margin-bottom: 15px;
+    width: 209px;
+    height: 4px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.price-input__slider-progress {
+    height: 4px;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgb(70, 163, 88);
+}
+
+.price-input__slider-range-input {
+    position: relative;
+}
+
+.price-input__slider-range-input input {
+    position: absolute;
+    height: 4px;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    background: none;
+    -webkit-appearance: none;
+    pointer-events: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    pointer-events: auto;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+    background-color: rgb(70, 163, 88);
+    border-radius: 50%;
+    -webkit-appearance: none;
+    border: 2px solid #fff;
+
+    transition: all .2s ease-in;
+
+    &:hover {
+        background-color: rgb(61, 130, 75);
+    }
+}
+
+input[type='range']::-moz-range-thumb {
+    pointer-events: auto;
+    cursor: pointer;
+    border: none;
+    width: 17px;
+    height: 17px;
+    background-color: rgb(70, 163, 88);
+    border-radius: 50%;
+    -moz-appearance: none;
+    border: 2px solid #fff;
+    transition: all .2s ease-in;
+
+
+    &:hover {
+        background-color: rgb(61, 130, 75);
+    }
+}
+
+
+// input range end
+// ======================================
 
 .catalog-filter__pricerange-btn {
     cursor: pointer;
@@ -153,4 +249,123 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+// =================================================
+// catalog cards start
+
+.catalog-cards {
+    width: 100%;
+    margin-left: 70px;
+}
+
+.catalog-cards__sorted {
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-cards__menu {}
+
+.catalog-cards__menu-list {
+    display: flex;
+}
+
+.catalog-cards__menu-list-item {
+    font-size: 15px;
+    line-height: 16px;
+    margin-right: 35px;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        opacity: 0;
+        position: absolute;
+        bottom: -6px;
+        right: 0;
+        height: 2px;
+        background: rgb(70, 163, 88);
+        transition: all .2s ease-in;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.catalog-cards__menu-list-item_active {
+    color: rgb(70, 163, 88);
+    font-weight: 700;
+    line-height: 16px;
+
+    &::after {
+        opacity: 1;
+    }
+}
+
+// catalog cards shortby start
+
+.catalog-cards__shortby {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.catalog__cards__shortby-title {
+    font-size: 15px;
+    line-height: 16px;
+    margin-right: 8px;
+}
+
+.catalog-cards__shortby-current {
+    cursor: pointer;
+    margin-right: 2px;
+    transition: all .2s ease-in;
+
+    &:hover {
+        color: rgb(70, 163, 88);
+    }
+}
+
+.catalog-cards__shortby-name-current {
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.catalog-cards__shortby-check {
+    margin-top: 4px;
+    width: 9px;
+    height: 5px;
+}
+
+.catalog-cards__shortby-modal {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgb(70, 163, 88);
+    padding: 16px 0;
+}
+
+.catalog-cards__shortby-modal-list {}
+
+.shortby-modal-list-item {
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &:hover {
+        color: rgb(70, 163, 88);
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenShop</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="scss/main.scss">
     <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
@@ -193,16 +192,6 @@
                             <img class="slider__list-item-img slider__list-item-img_flower"
                                 src="./assets/img/slider/flower.png" alt="">
                         </div>
-
-
-                        <!-- <div class="slider__list-item-points">
-                            <div class="points">
-                                <div class="point"></div>
-                                <div class="point"></div>
-                                <div class="point"></div>
-                            </div>
-                        </div> -->
-                        <!-- points end -->
                     </div>
                     <!-- header slider item end -->
 
@@ -293,15 +282,31 @@
 
                         <div class="catalog-filter__pricerange">
                             <p class="catalog-filter__pricerange-title">Price Range</p>
-                            <input id="rangeInput" class="catalog-filter__pricerange-rangeinput" type="range" min="39"
-                                max="2000" value="1000">
-                            <p class="catalog-filter__pricerange-price">
-                                Price:
-                                <span class="catalog-filter__pricerange-price-min">$39</span>
-                                <span
-                                    class="catalog-filter-pricerange__price catalog-filter-pricerange-price_dash">-</span>
-                                <span class="catalog-filter-pricerange__price-max">$1230</span>
-                            </p>
+
+                            <!-- input range start -->
+                            <div class="price-input">
+                                <div class="price-input__slider">
+                                    <div class="price-input__slider-progress"></div>
+                                    <div class="price-input__slider-range-input">
+                                        <input class="price-input__slider-range-input-min" type="range" min="0"
+                                            max="2000" value="39">
+                                        <input class="price-input__slider-range-input-max" type="range" min="0"
+                                            max="2000" value="1234">
+                                    </div>
+                                </div>
+
+                                <div class="price-input__field">
+                                    <span class="price-input__field-text">Price:</span>
+                                    <input class="price-input__field-min" type="number" min="0" value="39" step="1">
+                                    <div class="price-input__field-separator">-</div>
+                                    <input class="price-input__field-max" type="number" max="2000" value="1239"
+                                        step="1">
+                                </div>
+
+
+
+                            </div>
+                            <!-- input range end -->
                             <button class="catalog-filter__pricerange-btn">Filter</button>
                         </div>
                         <!-- catalog filter pricerange end -->
@@ -326,12 +331,55 @@
                         <!-- catalog filter size end -->
                     </div>
                     <!-- catalog filter end -->
-                    <img class="catalog__menu-img" src="./assets/img/catalog/banner.png" alt="">
                 </div>
                 <!-- catalog menu end -->
+
+
+                <!-- catalog cards start -->
+                <div class="catalog-cards">
+                    <div class="catalog-cards__sorted">
+
+                        <div class="catalog-cards__menu">
+                            <ul class="catalog-cards__menu-list">
+                                <li class="catalog-cards__menu-list-item catalog-cards__menu-list-item_active"><a
+                                        href="#"> All Plants</a></li>
+                                <li class="catalog-cards__menu-list-item"><a href="#">New Arrivals</a></li>
+                                <li class="catalog-cards__menu-list-item"><a href="#">Sale</a></li>
+                            </ul>
+                        </div>
+                        <!-- catalog cards menu end -->
+                        <div class="catalog-cards__shortby">
+                            <p class="catalog__cards__shortby-title">Short by:</p>
+                            <div class="catalog-cards__shortby-current">
+                                <span class="catalog-cards__shortby-name-current">
+                                    Default sorting
+                                </span>
+                                <svg class="catalog-cards__shortby-check" viewBox="0 0 12 6" fill="none">
+                                    <path id="Stroke 1" d="M10.0864 0.753071L5.41974 5.41974L0.753052 0.753071"
+                                        stroke="#3D3D3D" stroke-opacity="1.000000" stroke-width="1.500000"
+                                        stroke-linejoin="round" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <!-- shortby modal start -->
+                            <div class="catalog-cards__shortby-modal">
+                                <ul class="catalog-cards__shortby-modal-list">
+                                    <li class="shortby-modal-list-item">Default</li>
+                                    <li class="shortby-modal-list-item">Ascending</li>
+                                    <li class="shortby-modal-list-item">Descending</li>
+                                    <li class="shortby-modal-list-item">Discounted</li>
+                                </ul>
+                            </div>
+                            <!-- shortby modal end -->
+                        </div>
+                        <!-- catalog cards shortby end -->
+                    </div>
+
+                </div>
+                <!-- catalog cards end -->
             </div>
+            <!-- catalog inner end -->
         </div>
-        <!-- catalog end -->
+    </div>
     </div>
 
 
