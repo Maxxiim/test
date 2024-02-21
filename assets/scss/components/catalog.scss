@@ -262,6 +262,7 @@ input[type='range']::-moz-range-thumb {
 .catalog-cards__sorted {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 32px;
 }
 
 .catalog-cards__menu {}
@@ -344,7 +345,7 @@ input[type='range']::-moz-range-thumb {
 
 .catalog-cards__shortby-modal {
     width: 150px;
-    display: flex;
+    display: none;
     justify-content: center;
     position: absolute;
     top: 20px;
@@ -367,5 +368,83 @@ input[type='range']::-moz-range-thumb {
 
     &:last-child {
         margin-bottom: 0;
+    }
+}
+
+// catalog cards start 
+
+.catalog-cards__card {}
+
+.catalog-card {}
+
+.catalog-card__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-card__list-item {
+    display: flex;
+
+}
+
+.catalog-card__content {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 260px;
+    height: 300px;
+    background-color: #ddd;
+    transition: all .1s ease-in;
+
+    &::after {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background: rgb(70, 163, 88);
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+
+    &:hover>.catalog-card__content-icons {
+        display: flex;
+    }
+
+}
+
+.catalog-card__content img {
+    position: absolute;
+    top: -5px;
+    right: 15px;
+}
+
+.catalog-card__content-icons {
+    display: none;
+    gap: 10px;
+}
+
+.catalog-card__content-icons-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 8px;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+
+    transition: all .1s ease-in;
+
+    &:hover {
+        fill: rgb(70, 163, 88);
     }
 }
