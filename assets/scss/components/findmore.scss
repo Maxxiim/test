@@ -1,0 +1,86 @@
+.findMore {}
+
+.page__findMore {
+}
+
+.findMore__inner {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+}
+
+.findMore__inner-card {
+    position: relative;
+    padding: 37px 36px 40px;
+    display: flex;
+    justify-content: end;
+    width: 568px;
+    height: 250px;
+    background-color: #FBFBFB;
+}
+
+.findMore__inner-card-img {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+
+.findMore__inner-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    max-width: 300px;
+}
+
+.findMore__inner-card-content-title {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    max-width: 180px;
+}
+
+.findMore__inner-card-content-description {
+    margin-top: 9px;
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.findMore__btn {
+    margin-top: 25px;
+    cursor: pointer;
+    padding: 7px 0 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    line-height: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: none;
+    width: 140px;
+    background-color: rgb(70, 163, 88);
+    transition: all .2s ease-in;
+
+    &:hover {
+        background-color: rgb(55, 118, 67);
+
+    }
+}
+
+.findMore__btn span {
+    display: inline-flex;
+}
+
+.findMore__inner-card-circle {
+    position: absolute;
+    left: -170px;
+    bottom: -170px;
+    border-radius: 50%;
+    border: 1px solid rgb(70, 163, 88);
+    width: 256px;
+    height: 256px;
+}

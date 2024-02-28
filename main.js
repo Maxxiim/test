@@ -37,7 +37,7 @@ function autoSlider() {
     slider[counter].classList.add('slider__list-item_active')
 };
 
-let sliderTimer = 1000 * 5;
+let sliderTimer = 1000 * 3;
 let timerSlider = setInterval(() => autoSlider(), sliderTimer);
 
 // ==================================================================

@@ -543,4 +543,9 @@ input[type='range']::-moz-range-thumb {
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
+    transition: all .1s ease-in;
+
+    &:hover {
+        background: rgb(58, 129, 72);
+    }
 }
