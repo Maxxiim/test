@@ -1,0 +1,246 @@
+.footer {}
+
+.page__footer {}
+
+.footer__inner {
+    @include container();
+    background: #FBFBFB;
+    padding: 25px 25px 23px 24px;
+}
+
+// footer recomendation start
+
+.footer__recomendation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__recomendation-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__recomendation-list-item {
+    max-width: 203px;
+    display: inline-block;
+    position: relative;
+
+    &:last-child::after {
+        display: none;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -33px;
+        width: 1px;
+        height: 100%;
+        background: rgba(70, 163, 88, 0.1);
+    }
+}
+
+.footer__recomendation-list-item-title {
+    margin-top: 5px;
+    margin-bottom: 9px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.footer__recomendation-list-item-description {
+    color: rgb(114, 114, 114);
+    line-height: 22px;
+    max-width: 204px;
+}
+
+.footer__newsletters {
+    position: relative;
+    width: 354px;
+    margin-left: 62px;
+}
+
+.footer__newsletters-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 18px;
+}
+
+.footer__newsletters-input {
+    margin-bottom: 17px;
+    position: relative;
+    min-width: 260px;
+    color: rgb(172, 172, 172);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 11px;
+    font-family: 'Cera Pro', sans-serif;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.footer__newsletters-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 34px;
+    right: 16px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    border-radius: 0px 6px 6px 0px;
+    background: rgb(70, 163, 88);
+    border: none;
+    padding: 12px 21px;
+    transition: all .2s ease-in;
+
+    &:hover {
+        background: rgb(57, 124, 71);
+    }
+}
+
+.footer__newsletters-description {
+    min-width: 344px;
+    color: rgb(114, 114, 114);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+// footer recomendation end
+
+// footer contacts start
+
+.footer__contacts {
+    padding: 28px 24px;
+    margin-left: -24px;
+    margin-right: -24px;
+    background: rgba(70, 163, 88, 0.1);
+}
+
+.footer__contacts-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__contacts-list-item-logo {
+    width: 150px;
+}
+
+.footer__contacts-list-item-mark {}
+
+.footer__contacts-list-item-street {
+    max-width: 176px;
+    line-height: 22px;
+}
+
+.footer__contacts-list-item-email {}
+
+.footer__contacts-list-item-phone {}
+
+// footer contacts end
+
+// footer menu start
+
+.footer__menu {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu-list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__menu-list-item-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.footer__menu-list-item-link {
+    line-height: 30px;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// footer menu end
+
+.footer__menu-payments {
+    margin-left: 170px;
+    min-width: 344px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__menu-payments-social {
+    margin-bottom: 33px;
+}
+
+.footer__menu-payments-social-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 22px;
+}
+
+.footer__menu-payments-social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__menu-payments-social-list-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(70, 163, 88, 0.2);
+    border-radius: 4px;
+    fill: rgba(70, 163, 88, 0.6);
+
+    &:hover {
+        fill: #000;
+        background: rgba(70, 163, 88, 0.1);
+    }
+}
+
+.footer__menu-payments-pay {}
+
+.footer__menu-payments-pay-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 22px;
+    margin-bottom: 13px;
+}
