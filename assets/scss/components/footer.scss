@@ -13,6 +13,7 @@
 .footer__recomendation {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 
 .footer__recomendation-list {
@@ -148,13 +149,39 @@
 .footer__contacts-list-item-mark {}
 
 .footer__contacts-list-item-street {
-    max-width: 176px;
+    width: 200px;
+    max-width: 250px;
     line-height: 22px;
+    transition: all .2s ease-in;
+
+    &:hover {
+        font-size: 15px;
+        font-weight: 700;
+    }
 }
 
-.footer__contacts-list-item-email {}
+.footer__contacts-list-item-email {
+    width: 200px;
+    max-width: 250px;
+    transition: all .2s ease-in-out;
 
-.footer__contacts-list-item-phone {}
+    &:hover {
+        max-width: 250px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+.footer__contacts-list-item-phone {
+    width: 200px;
+    max-width: 250px;
+    transition: all .2s ease-in;
+
+    &:hover {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
 
 // footer contacts end
 
@@ -175,6 +202,8 @@
 .footer__menu-list-item {
     display: flex;
     flex-direction: column;
+    width: 140px;
+    max-width: 170px;
 }
 
 .footer__menu-list-item-title {
@@ -187,6 +216,13 @@
 .footer__menu-list-item-link {
     line-height: 30px;
     margin-bottom: 10px;
+
+    transition: all .1s ease-in;
+
+    &:hover {
+        font-size: 14px;
+        font-weight: 700;
+    }
 
     &:last-child {
         margin-bottom: 0;
