@@ -1,0 +1,76 @@
+.releted {}
+
+.page-releted {
+    margin-bottom: 128px;
+}
+
+.releted__inner {
+    @include container();
+}
+
+.releter__inner-title {
+    color: rgb(70, 163, 88);
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 11px;
+    border-bottom: .3px solid rgba(70, 163, 88, 0.5);
+}
+
+.slider-products {
+    position: relative;
+}
+
+.slider-products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.slider-products__list-item {
+    width: 219px;
+    cursor: pointer;
+    margin-top: 45px;
+
+}
+
+.slider-products__list-item-img {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    background-color: rgb(251, 251, 251);
+
+    & img {
+        width: 190px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.slider-products__list-item-descr {}
+
+.slider-products__list-item-descr-title {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.slider-products__list-item-descr-price {
+    color: rgb(70, 163, 88);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.slider__products-points {
+    display: flex;
+    margin-top: 61px;
+}
+
+.points {}
+
+.point {}
