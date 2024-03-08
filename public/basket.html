@@ -15,7 +15,7 @@
         <div class="header page__header">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a class="header__logo header__logo_link" href="./index.html">
+                    <a class="header__logo header__logo_link" href="#">
                         <svg viewBox="0 0 150 35">
                             <g clip-path="url(#clip0_2_71)">
                                 <path
@@ -61,22 +61,22 @@
 
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-list-item">
+                        <li class="header__nav-list-item ">
                             <a href="index.html">
                                 Home
                             </a>
                         </li>
-                        <li class="header__nav-list-item">
+                        <li class="header__nav-list-item header__nav-list-item_active">
                             <a href="/public/shop.html">
                                 Shop
                             </a>
                         </li>
-                        <li class="header__nav-list-item header__nav-list-item_active">
-                            <a href="./public/plantcare.html">
+                        <li class="header__nav-list-item">
+                            <a href="/plantcare.html">
                                 Plant Care
                             </a>
                         </li>
-                        <li class="header__nav-list-item">
+                        <li class="header__nav-list-item ">
                             <a href="/public/blogs.html">
                                 Blogs
                             </a>
@@ -124,8 +124,147 @@
         </div>
         <!-- header end -->
 
-        <div class="plantCare page-plantCare">
-            <div class="plantCare__inner">
+        <!-- <p class="product__inner-swiper">
+            <span class="product__inner-swiper product__inner-swiper_active">Home</span> / Shop
+        </p> -->
+
+        <div class="basket page-basket">
+            <div class="basket__inner">
+
+                <!-- goods start -->
+                <div class="goods">
+                    Lorem, ipsum dolor.
+                </div>
+                <!-- goods end -->
+
+                <!-- totals start -->
+                <div class="totals">
+                    <h3 class="totals__title">Cart Totals</h3>
+
+                    <!-- coupon start -->
+                    <div class="totals__coupon">
+                        <p class="totals__coupon-name">Coupon Apply</p>
+                        <input class="totals__coupon-input" type="text" placeholder="Enter coupon code here...">
+                        <button class="totals__coupon-btn">Apply</button>
+                    </div>
+                    <!-- coupon end -->
+
+                    <div class="totals__sum">
+
+                        <div class="totals__sum-subtotal">
+                            <p class="totals__sum-subtotals-name">Subtotal</p>
+                            <p class="totals__sum-subtotals-num">$2,683.00</p>
+                        </div>
+
+                        <div class="totals__sum-discount">
+                            <p class="totals__sum-discount-name">Coupon Discount</p>
+                            <p class="totals__sum-discount-num">00.00</p>
+                        </div>
+
+                        <div class="totals__sum-shiping">
+                            <p class="totals__sum-shiping-name">Shiping</p>
+                            <p class="totals__sum-shiping-num">$16.00</p>
+                            <a class="totals__sum-shiping-descr" href="#">
+                                <span>View shipping charge</span>
+                            </a>
+                        </div>
+
+                        <div class="totals__sum-total">
+                            <p class="total__sum-total-name">Total</p>
+                            <p class="total__sum-total-num">$2,699.00</p>
+                        </div>
+                    </div>
+
+                    <div class="totals__proceed">
+                        <a href="#">
+                            <button class="totals__proceed-btn">Proceed to checkout</button>
+                        </a>
+                        <a href="#">
+                            <p class="totals__proceed-continue">Continue Shopping</p>
+                        </a>
+                    </div>
+                    <!-- proceed end -->
+
+                </div>
+                <!-- totals end -->
+            </div>
+        </div>
+
+
+        <div class="releted page-releted">
+            <div class="releted__inner">
+                <p class="releter__inner-title">Releted Products</p>
+
+                <div class="slider-products">
+
+                    <div class="slider-products__list">
+                        <!-- card 1 start -->
+                        <div class="slider-products__list-item">
+                            <div class="slider-products__list-item-img">
+                                <img src="/assets/img/releted/1.png" alt="">
+                            </div>
+                            <div class="slider-products__list-item-descr">
+                                <p class="slider-products__list-item-descr-title">Beach Spider Lily</p>
+                                <p class="slider-products__list-item-descr-price">$129.00</p>
+                            </div>
+                        </div>
+                        <!-- card 1 end -->
+                        <!-- card 2 start -->
+                        <div class="slider-products__list-item">
+                            <div class="slider-products__list-item-img">
+                                <img src="/assets/img/releted/1.png" alt="">
+                            </div>
+                            <div class="slider-products__list-item-descr">
+                                <p class="slider-products__list-item-descr-title">Blushing Bromeliad</p>
+                                <p class="slider-products__list-item-descr-price">$139.00</p>
+                            </div>
+                        </div>
+                        <!-- card 2 end -->
+                        <!-- card 3 start -->
+                        <div class="slider-products__list-item">
+                            <div class="slider-products__list-item-img">
+                                <img src="/assets/img/releted/1.png" alt="">
+                            </div>
+                            <div class="slider-products__list-item-descr">
+                                <p class="slider-products__list-item-descr-title">Aluminum Plant</p>
+                                <p class="slider-products__list-item-descr-price">$179.00</p>
+                            </div>
+                        </div>
+                        <!-- card 3 end -->
+                        <!-- card 4 start -->
+                        <div class="slider-products__list-item">
+                            <div class="slider-products__list-item-img">
+                                <img src="/assets/img/releted/1.png" alt="">
+                            </div>
+                            <div class="slider-products__list-item-descr">
+                                <p class="slider-products__list-item-descr-title">Bird's Nest Fern</p>
+                                <p class="slider-products__list-item-descr-price">$99.00</p>
+                            </div>
+                        </div>
+                        <!-- card 4 end -->
+                        <!-- card 5 start -->
+                        <div class="slider-products__list-item">
+                            <div class="slider-products__list-item-img">
+                                <img src="/assets/img/releted/1.png" alt="">
+                            </div>
+                            <div class="slider-products__list-item-descr">
+                                <p class="slider-products__list-item-descr-title">Chinese Evergreen</p>
+                                <p class="slider-products__list-item-descr-price">$39.00</p>
+                            </div>
+                        </div>
+                        <!-- card 5 end -->
+                    </div>
+                    <!-- points start -->
+                    <div class="slider__products-points">
+                        <div class="points products">
+                            <div class="point product"></div>
+                            <div class="point product"></div>
+                            <div class="point product_active"></div>
+                        </div>
+                    </div>
+                    <!-- points end -->
+                </div>
+
             </div>
         </div>
 

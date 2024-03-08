@@ -1,0 +1,208 @@
+.basket {}
+
+.page-basket {
+    margin-top: 60px;
+    margin-bottom: 85px;
+}
+
+.basket__inner {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+}
+
+.goods {
+    width: 780px;
+}
+
+.totals {
+
+    min-width: 332px;
+}
+
+.totals__title {
+    max-width: 100px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.totals__coupon {
+    position: relative;
+    padding-top: 10px;
+    border-top: 0.3px solid rgba(70, 163, 88, 0.5);
+    margin-bottom: 30px;
+}
+
+.totals__coupon-name {
+    max-width: 100px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.totals__coupon-input {
+    color: rgb(165, 165, 165);
+    font-family: 'Cera Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    width: 230px;
+    max-width: 230px;
+    border: 1px solid rgb(70, 163, 88);
+    outline: none;
+    padding-top: 12px;
+    padding-bottom: 11px;
+    padding-left: 9px;
+}
+
+.totals__coupon-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 0px 3px 3px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    width: 102px;
+    border: none;
+    background: rgb(70, 163, 88);
+    transition: all .2s ease-in;
+
+    &:hover {
+        background: rgb(60, 120, 72);
+    }
+}
+
+.totals__sum {}
+
+.totals__sum-subtotal {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totals__sum-subtotals-name {
+    max-width: 100px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.totals__sum-subtotals-num {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.totals__sum-discount {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totals__sum-discount-name {
+    max-width: 130px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.totals__sum-discount-num {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.totals__sum-shiping {
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totals__sum-shiping-name {
+    max-width: 130px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.totals__sum-shiping-num {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.totals__sum-shiping-descr {
+    max-width: 150px;
+    color: rgb(70, 163, 88);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+
+    &:hover {
+        color: rgb(65, 136, 79);
+    }
+}
+
+
+.totals__sum-total {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total__sum-total-name {
+    max-width: 130px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.total__sum-total-num {
+    color: rgb(70, 163, 88);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.totals__proceed {
+    text-align: center;
+}
+
+.totals__proceed-btn {
+    margin-bottom: 26px;
+    cursor: pointer;
+    border: none;
+    padding: 12px 0;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    border-radius: 3px;
+    background: rgb(70, 163, 88);
+    width: 100%;
+    transition: all .2s ease-in;
+
+    &:hover {
+        background: rgb(54, 116, 67);
+    }
+}
+
+.totals__proceed-continue {
+    color: rgb(70, 163, 88);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+
+    &:hover {
+        color: rgb(54, 116, 67);
+    }
+}
