@@ -15,7 +15,7 @@
         <div class="header page__header">
             <div class="header__inner">
                 <div class="header__logo">
-                    <a class="header__logo header__logo_link" href="#">
+                    <a class="header__logo header__logo_link" href="./index.html">
                         <svg viewBox="0 0 150 35">
                             <g clip-path="url(#clip0_2_71)">
                                 <path
@@ -61,7 +61,7 @@
 
                 <nav class="header__nav">
                     <ul class="header__nav-list">
-                        <li class="header__nav-list-item ">
+                        <li class="header__nav-list-item">
                             <a href="index.html">
                                 Home
                             </a>
@@ -71,12 +71,12 @@
                                 Shop
                             </a>
                         </li>
-                        <li class="header__nav-list-item">
-                            <a href="/plantcare.html">
+                        <li class="header__nav-list-item ">
+                            <a href="./public/plantcare.html">
                                 Plant Care
                             </a>
                         </li>
-                        <li class="header__nav-list-item ">
+                        <li class="header__nav-list-item">
                             <a href="/public/blogs.html">
                                 Blogs
                             </a>
@@ -124,341 +124,154 @@
         </div>
         <!-- header end -->
 
+        <div class="checkout page-checkout">
 
+            <div class="checkout__wrapper">
 
-        <div class="basket page-basket">
+                <div class="checkout__inner">
 
-            <div class="basket__wrapper">
+                    <form class="form" action="">
 
-                <p class="basket__wrapper-swiper">
-                    <span class="basket__wrapper-swiper basket__wrapper-swiper_active">Home</span>
-                    / Shop / Shopping Cart
-                </p>
-
-                <div class="basket__inner">
-
-                    <!-- goods start -->
-                    <div class="goods">
-
-                        <div class="goods__list">
-
-                            <ul class="goods__list-item-sections">
-                                <li class="goods__list-item-section goods__list-item-section-products">Products</li>
-                                <li class="goods__list-item-section goods__list-item-section-price">Price</li>
-                                <li class="goods__list-item-section goods__list-item-section-quantity">Quantity</li>
-                                <li class="goods__list-item-section goods__list-item-section-total">Total</li>
-                            </ul>
-
-                            <!-- good 1 start -->
-                            <div class="goods__list-item">
-                                <div class="goods__list-item-product">
-                                    <div class="goods__list-item-product-img">
-                                        <img src="/assets/img/basket/1.png" alt="">
-                                    </div>
-                                    <div class="goods__list-item-product-name">
-                                        <p class="goods__list-item-product-title">Barberton Daisy</p>
-                                        <p class="goods__list-item-product-sku">
-                                            SKU:
-                                            <span>
-                                                1995751877966
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="goods__list-item-price">
-                                    <p>$199.00</p>
-                                </div>
-
-                                <div class="goods__list-item-quntity">
-                                    <div class="count-wrap count-wrap-quantity">
-                                        <button
-                                            class="count-wrap__btn count-wrap__btn_minus count-wrap__btn-quantity_minus">
-                                        </button>
-                                        <input class="quantity quantity-good" type="number" value="2" min="1"
-                                            max="999" />
-                                        <button
-                                            class="count-wrap__btn count-wrap__btn_plus count-wrap__btn-quantity_plus">
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="goods__list-item-total">
-                                    <p>$238.00</p>
-                                </div>
-
-                                <div class="goods__list-item-remove">
-                                    <svg class="goods__list-item-remove-img" width="18" height="20" viewBox="0 0 18 20"
-                                        fill="" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <path id="Stroke 1"
-                                            d="M15.4246 7.58997C15.4246 15.609 16.5789 19.2338 8.81519 19.2338C1.05029 19.2338 2.22852 15.609 2.22852 7.58997"
-                                            stroke="" stroke-width="1.500000" stroke-linejoin="round"
-                                            stroke-linecap="round" />
-                                        <path id="Stroke 3" d="M16.9004 4.51569L0.75 4.51569" stroke=""
-                                            stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
-                                        <path id="Stroke 5"
-                                            d="M12.2502 4.51572C12.2502 4.51572 12.7788 0.75 8.82446 0.75C4.87109 0.75 5.39966 4.51572 5.39966 4.51572"
-                                            stroke="" stroke-linejoin="round" stroke-linecap="round" />
+                        <div class="form__name">
+                            <div class="form__name-first">
+                                <p class="form__name-first-title">First name
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
                                     </svg>
-                                </div>
+                                </p>
+                                <input type="text" id="first_name" name="name">
                             </div>
-                            <!-- good 1 end -->
-
-                            <!-- good 2 start -->
-                            <div class="goods__list-item">
-
-                                <div class="goods__list-item-product">
-                                    <div class="goods__list-item-product-img">
-                                        <img src="/assets/img/basket/2.png" alt="">
-                                    </div>
-                                    <div class="goods__list-item-product-name">
-                                        <p class="goods__list-item-product-title">Blushing Bromeliad</p>
-                                        <p class="goods__list-item-product-sku">
-                                            SKU:
-                                            <span>
-                                                19957518757065
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="goods__list-item-price">
-                                    <p>$139.00</p>
-                                </div>
-
-                                <div class="goods__list-item-quntity">
-                                    <div class="count-wrap count-wrap-quantity">
-                                        <button
-                                            class="count-wrap__btn count-wrap__btn_minus count-wrap__btn-quantity_minus">
-                                        </button>
-                                        <input class="quantity quantity-good" type="number" value="6" min="1"
-                                            max="999" />
-                                        <button
-                                            class="count-wrap__btn count-wrap__btn_plus count-wrap__btn-quantity_plus">
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="goods__list-item-total">
-                                    <p>$834.00</p>
-                                </div>
-
-                                <div class="goods__list-item-remove">
-                                    <svg class="goods__list-item-remove-img" width="18" height="20" viewBox="0 0 18 20"
-                                        fill="" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <path id="Stroke 1"
-                                            d="M15.4246 7.58997C15.4246 15.609 16.5789 19.2338 8.81519 19.2338C1.05029 19.2338 2.22852 15.609 2.22852 7.58997"
-                                            stroke="" stroke-width="1.500000" stroke-linejoin="round"
-                                            stroke-linecap="round" />
-                                        <path id="Stroke 3" d="M16.9004 4.51569L0.75 4.51569" stroke=""
-                                            stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
-                                        <path id="Stroke 5"
-                                            d="M12.2502 4.51572C12.2502 4.51572 12.7788 0.75 8.82446 0.75C4.87109 0.75 5.39966 4.51572 5.39966 4.51572"
-                                            stroke="" stroke-linejoin="round" stroke-linecap="round" />
+                            <div class="form__name-last">
+                                <p class="form__name-last-title">Last name
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
                                     </svg>
-                                </div>
+                                </p>
+                                <input type="text" id="last_name" name="name">
                             </div>
-                            <!-- good 2 end -->
+                        </div>
 
-                            <!-- good 3 start -->
-                            <div class="goods__list-item">
+                        <div class="form__country">
 
-                                <div class="goods__list-item-product">
-                                    <div class="goods__list-item-product-img">
-                                        <img src="/assets/img/basket/3.png" alt="">
-                                    </div>
-                                    <div class="goods__list-item-product-name">
-                                        <p class="goods__list-item-product-title">Aluminum Plant</p>
-                                        <p class="goods__list-item-product-sku">
-                                            SKU:
-                                            <span>
-                                                1995751877786
-                                            </span>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="goods__list-item-price">
-                                    <p>$179.00</p>
-                                </div>
-
-                                <div class="goods__list-item-quntity">
-                                    <div class="count-wrap count-wrap-quantity">
-                                        <button
-                                            class="count-wrap__btn count-wrap__btn_minus count-wrap__btn-quantity_minus">
-                                        </button>
-                                        <input class="quantity quantity-good" type="number" value="9" min="1"
-                                            max="999" />
-                                        <button
-                                            class="count-wrap__btn count-wrap__btn_plus count-wrap__btn-quantity_plus">
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="goods__list-item-total">
-                                    <p>$1,611.00</p>
-                                </div>
-
-                                <div class="goods__list-item-remove">
-                                    <svg class="goods__list-item-remove-img" width="18" height="20" viewBox="0 0 18 20"
-                                        fill="" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <path id="Stroke 1"
-                                            d="M15.4246 7.58997C15.4246 15.609 16.5789 19.2338 8.81519 19.2338C1.05029 19.2338 2.22852 15.609 2.22852 7.58997"
-                                            stroke="" stroke-width="1.500000" stroke-linejoin="round"
-                                            stroke-linecap="round" />
-                                        <path id="Stroke 3" d="M16.9004 4.51569L0.75 4.51569" stroke=""
-                                            stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round" />
-                                        <path id="Stroke 5"
-                                            d="M12.2502 4.51572C12.2502 4.51572 12.7788 0.75 8.82446 0.75C4.87109 0.75 5.39966 4.51572 5.39966 4.51572"
-                                            stroke="" stroke-linejoin="round" stroke-linecap="round" />
+                            <div class="form__country-country">
+                                <p class="form__country-country-title">Country / Region
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
                                     </svg>
+                                </p>
+                                <input type="text" id="country" name="name" placeholder="Select a country / region">
+                            </div>
+
+                            <div class="form__country-city">
+                                <p class="form__country-city-title">Town / City
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </p>
+                                <input type="text" id="city">
+                            </div>
+
+                        </div>
+
+                        <div class="form__street">
+                            <div class="form__street-address">
+                                <p class="form__street-address-title">Stree Address
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </p>
+                                <div class="form__street-addres-block">
+                                    <input type="text" id="street" name="name"
+                                        placeholder="House number and street name">
+                                    <input type="text" id="appartament" name="name"
+                                        placeholder="Appartment, suite, unit, etc. (optional)">
                                 </div>
                             </div>
-                            <!-- good 3 end -->
-
                         </div>
-                        <!-- goods list end -->
-                    </div>
-                    <!-- goods end -->
 
-                    <!-- totals start -->
-                    <div class="totals">
-                        <h3 class="totals__title">Cart Totals</h3>
-
-                        <!-- coupon start -->
-                        <div class="totals__coupon">
-                            <p class="totals__coupon-name">Coupon Apply</p>
-                            <input class="totals__coupon-input" type="text" placeholder="Enter coupon code here...">
-                            <button class="totals__coupon-btn">Apply</button>
-                        </div>
-                        <!-- coupon end -->
-
-                        <div class="totals__sum">
-
-                            <div class="totals__sum-subtotal">
-                                <p class="totals__sum-subtotals-name">Subtotal</p>
-                                <p class="totals__sum-subtotals-num">$2,683.00</p>
+                        <div class="form__state">
+                            <div class="form__state-state">
+                                <p class="form__state-state-title">State
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </p>
+                                <input type="text" id="state" name="name" placeholder="Select a state">
                             </div>
-
-                            <div class="totals__sum-discount">
-                                <p class="totals__sum-discount-name">Coupon Discount</p>
-                                <p class="totals__sum-discount-num">00.00</p>
-                            </div>
-
-                            <div class="totals__sum-shiping">
-                                <p class="totals__sum-shiping-name">Shiping</p>
-                                <p class="totals__sum-shiping-num">$16.00</p>
-                                <a class="totals__sum-shiping-descr" href="#">
-                                    <span>View shipping charge</span>
-                                </a>
-                            </div>
-
-                            <div class="totals__sum-total">
-                                <p class="total__sum-total-name">Total</p>
-                                <p class="total__sum-total-num">$2,699.00</p>
+                            <div class="form__state-zip">
+                                <p class="form__state-zip-title">Zip
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </p>
+                                <input type="text" id="zip" name="name">
                             </div>
                         </div>
 
-                        <div class="totals__proceed">
-                            <a href="/public/checkout.html">
-                                <button class="totals__proceed-btn">Proceed to checkout</button>
-                            </a>
-                            <a href="#">
-                                <p class="totals__proceed-continue">Continue Shopping</p>
-                            </a>
-                        </div>
-                        <!-- proceed end -->
-
-                    </div>
-                    <!-- totals end -->
-                </div>
-                <!-- basket inner end -->
-
-            </div>
-            <!-- basket wrapper end -->
-
-        </div>
-
-
-        <div class="releted page-releted">
-            <div class="releted__inner">
-                <p class="releter__inner-title">You may be interested in</p>
-
-                <div class="slider-products">
-
-                    <div class="slider-products__list">
-                        <!-- card 1 start -->
-                        <div class="slider-products__list-item">
-                            <div class="slider-products__list-item-img">
-                                <img src="/assets/img/releted/1.png" alt="">
+                        <div class="form__email">
+                            <div class="form__email-address">
+                                <p class="form__email-address-title">Email address
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </p>
+                                <input type="email" id="email" name="email">
                             </div>
-                            <div class="slider-products__list-item-descr">
-                                <p class="slider-products__list-item-descr-title">Beach Spider Lily</p>
-                                <p class="slider-products__list-item-descr-price">$129.00</p>
+                            <div class="form__email-phone">
+                                <p class="form__email-phone-title">Phone Number
+                                    <svg class="form form_star" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path id="*"
+                                            d="M5.45 1.18L6 2.1L3.94 3.51L6 4.92L5.45 5.82L3.21 4.74L3.03 7.23L1.98 7.23L1.78 4.74L-0.46 5.82L-0.99 4.92L1.08 3.51L-0.99 2.1L-0.46 1.18L1.78 2.26L1.98 -0.23L3.03 -0.23L3.21 2.26L5.45 1.18Z"
+                                            fill="#F03800" fill-opacity="1.000000" fill-rule="evenodd" />
+                                    </svg>
+                                </p>
+                                <input type="tel" id="phone" name="phone" value="+966">
                             </div>
                         </div>
-                        <!-- card 1 end -->
-                        <!-- card 2 start -->
-                        <div class="slider-products__list-item">
-                            <div class="slider-products__list-item-img">
-                                <img src="/assets/img/releted/1.png" alt="">
-                            </div>
-                            <div class="slider-products__list-item-descr">
-                                <p class="slider-products__list-item-descr-title">Blushing Bromeliad</p>
-                                <p class="slider-products__list-item-descr-price">$139.00</p>
-                            </div>
+
+                        <div class="form__ship">
+                            <input type="radio" id="ship" name="ship">
+                            <label class="form__ship-label" for="ship">Ship to a different address?</label>
                         </div>
-                        <!-- card 2 end -->
-                        <!-- card 3 start -->
-                        <div class="slider-products__list-item">
-                            <div class="slider-products__list-item-img">
-                                <img src="/assets/img/releted/1.png" alt="">
-                            </div>
-                            <div class="slider-products__list-item-descr">
-                                <p class="slider-products__list-item-descr-title">Aluminum Plant</p>
-                                <p class="slider-products__list-item-descr-price">$179.00</p>
-                            </div>
+
+                        <div class="form__notes">
+                            <p class="form__notes-title">
+                                Order notes (optional)
+                            </p>
+                            <textarea name="textarea" id="textarea"></textarea>
                         </div>
-                        <!-- card 3 end -->
-                        <!-- card 4 start -->
-                        <div class="slider-products__list-item">
-                            <div class="slider-products__list-item-img">
-                                <img src="/assets/img/releted/1.png" alt="">
-                            </div>
-                            <div class="slider-products__list-item-descr">
-                                <p class="slider-products__list-item-descr-title">Bird's Nest Fern</p>
-                                <p class="slider-products__list-item-descr-price">$99.00</p>
-                            </div>
-                        </div>
-                        <!-- card 4 end -->
-                        <!-- card 5 start -->
-                        <div class="slider-products__list-item">
-                            <div class="slider-products__list-item-img">
-                                <img src="/assets/img/releted/1.png" alt="">
-                            </div>
-                            <div class="slider-products__list-item-descr">
-                                <p class="slider-products__list-item-descr-title">Chinese Evergreen</p>
-                                <p class="slider-products__list-item-descr-price">$39.00</p>
-                            </div>
-                        </div>
-                        <!-- card 5 end -->
-                    </div>
-                    <!-- points start -->
-                    <div class="slider__products-points">
-                        <div class="points products">
-                            <div class="point product"></div>
-                            <div class="point product"></div>
-                            <div class="point product_active"></div>
-                        </div>
-                    </div>
-                    <!-- points end -->
+                    </form>
+
                 </div>
 
             </div>
         </div>
+        <!-- checkout end -->
 
         <footer class="footer page__footer">
             <div class="footer__inner">
