@@ -128,9 +128,19 @@
 
             <div class="checkout__wrapper">
 
+
+                <p class="checkout__wrapper-swiper">
+                    <span class="checkout__wrapper-swiper checkout__wrapper-swiper_active">Home</span>
+                    / Shop / Checkout
+                </p>
+
                 <div class="checkout__inner">
 
                     <form class="form" action="">
+
+                        <div class="form__title">
+                            <p class="form__title-text">Billing Address</p>
+                        </div>
 
                         <div class="form__name">
                             <div class="form__name-first">
@@ -169,6 +179,13 @@
                                     </svg>
                                 </p>
                                 <input type="text" id="country" name="name" placeholder="Select a country / region">
+                                <svg class="form__country-country-vector" width="11" height="6" viewBox="0 0 11 6"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="Vector 37 (Stroke)"
+                                        d="M9.89 0.1C10.11 0.32 10.11 0.67 9.89 0.89L5.39 5.39C5.17 5.61 4.82 5.61 4.6 5.39L0.1 0.89C-0.12 0.67 -0.12 0.32 0.1 0.1C0.32 -0.12 0.67 -0.12 0.89 0.1L5 4.2L9.1 0.1C9.32 -0.12 9.67 -0.12 9.89 0.1Z"
+                                        fill="#3D3D3D" />
+                                </svg>
                             </div>
 
                             <div class="form__country-city">
@@ -215,6 +232,14 @@
                                     </svg>
                                 </p>
                                 <input type="text" id="state" name="name" placeholder="Select a state">
+                                <svg class="form__state-state-vector" width="11" height="6" viewBox="0 0 11 6"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="Vector 37 (Stroke)"
+                                        d="M9.89 0.1C10.11 0.32 10.11 0.67 9.89 0.89L5.39 5.39C5.17 5.61 4.82 5.61 4.6 5.39L0.1 0.89C-0.12 0.67 -0.12 0.32 0.1 0.1C0.32 -0.12 0.67 -0.12 0.89 0.1L5 4.2L9.1 0.1C9.32 -0.12 9.67 -0.12 9.89 0.1Z"
+                                        fill="#3D3D3D" />
+                                </svg>
+
                             </div>
                             <div class="form__state-zip">
                                 <p class="form__state-zip-title">Zip
@@ -251,11 +276,19 @@
                                     </svg>
                                 </p>
                                 <input type="tel" id="phone" name="phone" value="+966">
+                                <svg class="form__email-phone-vector" width="11" height="6" viewBox="0 0 11 6"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path id="Vector 37 (Stroke)"
+                                        d="M9.89 0.1C10.11 0.32 10.11 0.67 9.89 0.89L5.39 5.39C5.17 5.61 4.82 5.61 4.6 5.39L0.1 0.89C-0.12 0.67 -0.12 0.32 0.1 0.1C0.32 -0.12 0.67 -0.12 0.89 0.1L5 4.2L9.1 0.1C9.32 -0.12 9.67 -0.12 9.89 0.1Z"
+                                        fill="#3D3D3D" />
+                                </svg>
                             </div>
                         </div>
 
                         <div class="form__ship">
                             <input type="radio" id="ship" name="ship">
+                            <span class="form__ship-radio"></span>
                             <label class="form__ship-label" for="ship">Ship to a different address?</label>
                         </div>
 
@@ -267,9 +300,140 @@
                         </div>
                     </form>
 
+                    <!-- checkout order start -->
+                    <div class="checkout__order">
+                        <p class="checkout__order-title">Your Order</p>
+
+                        <div class="checkout__order-list">
+
+                            <div class="checkout__order-list-title">
+                                <p>Products</p>
+                                <p>Subtotal</p>
+                            </div>
+
+                            <!-- order list item start -->
+                            <div class="checkout__order-list-item">
+                                <div class="checkout__order__list-item-good">
+                                    <img class="checkout__order-list-item-good-img" src="/assets/img/checkout/1.png"
+                                        alt="">
+                                    <div class="checkout__order-list-item-good-sku">
+                                        <p class="checkout__order-list-item-good-sku-title">Barberton Daisy</p>
+                                        <p class="checkout__order-list-item-good-sku-num">
+                                            sku: <span>1995751877966</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkout__order-list-item-num">
+                                    <p>( x<span>2</span> ) </p>
+                                </div>
+                                <div class="checkout__order-list-item-total">
+                                    <p class="checkout__order-list-item-total-price">$238.00</p>
+                                </div>
+                            </div>
+                            <!-- order list item end -->
+
+                            <!-- order list item start -->
+                            <div class="checkout__order-list-item">
+                                <div class="checkout__order__list-item-good">
+                                    <img class="checkout__order-list-item-good-img" src="/assets/img/checkout/2.png"
+                                        alt="">
+                                    <div class="checkout__order-list-item-good-sku">
+                                        <p class="checkout__order-list-item-good-sku-title">Blushing Bromeliad</p>
+                                        <p class="checkout__order-list-item-good-sku-num">
+                                            sku: <span>19957518757065</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkout__order-list-item-num">
+                                    <p>( x<span>6</span> ) </p>
+                                </div>
+                                <div class="checkout__order-list-item-total">
+                                    <p class="checkout__order-list-item-total-price">$834.00</p>
+                                </div>
+                            </div>
+                            <!-- order list item end -->
+
+                            <!-- order list item start -->
+                            <div class="checkout__order-list-item">
+                                <div class="checkout__order__list-item-good">
+                                    <img class="checkout__order-list-item-good-img" src="/assets/img/checkout/3.png"
+                                        alt="">
+                                    <div class="checkout__order-list-item-good-sku">
+                                        <p class="checkout__order-list-item-good-sku-title">Aluminum Plant</p>
+                                        <p class="checkout__order-list-item-good-sku-num">
+                                            sku: <span>1995751877786</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="checkout__order-list-item-num">
+                                    <p>( x<span>9</span> ) </p>
+                                </div>
+                                <div class="checkout__order-list-item-total">
+                                    <p class="checkout__order-list-item-total-price">$1,611.00</p>
+                                </div>
+                            </div>
+                            <!-- order list item end -->
+
+                        </div>
+
+                        <!-- checkout order total -->
+                        <div class="checkout__order-total">
+
+                            <!-- coupon start -->
+                            <div class="checkout__order-total-coupon">
+                                <p class="checkout__order-total-coupon-text">
+                                    Have a coupon code?
+                                </p>
+                                <p class="checkout__order-total-coupon-click">Click here</p>
+                                <div class="checkout__order-total-coupon-input">
+                                    <input type="text" placeholder="Enter the code...">
+                                </div>
+                            </div>
+                            <!-- coupon end -->
+
+                            <div class="checkout__order-total-sum">
+                                <div class="checkout__order-total-sum-inner">
+                                    <div class="checkout__order-total-sum-subtotal">
+                                        <p class="checkout__order-total-sum-subtotal-title">Subtotal</p>
+                                        <p class="checkout__order-total-sum-subtotal-price">$2,683.00</p>
+                                    </div>
+                                    <div class="checkout__order-total-sum-discount">
+                                        <p class="checkout__order-total-sum-discount-title">Coupon Discount</p>
+                                        <p class="checkout__order-total-sum-discount-price">00.00</p>
+                                    </div>
+                                    <div class="checkout__order-total-sum-shiping">
+                                        <p class="checkout__order-total-sum-shiping-title">Shiping</p>
+                                        <p class="checkout__order-total-sum-shiping-price">$16.00</p>
+                                        <span class="checkout__order-total-sum-shiping-view">View shipping charge</span>
+                                    </div>
+                                </div>
+                                <div class="checkout__order-total-result">
+                                    <p class="checkout__order-total-result-title">Total</p>
+                                    <p class="checkout__order-total-result-price">$2,699.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- checkout order total end -->
+
+                        <div class="checkout__order-payment">
+                            <p class="checkout__order-payment-title">Payment Method</p>
+                            <div class="checkout__order-payment-list">
+                                <div class="checkout__order-payment-list-item">
+                                    <input class="checkout__order-payment-list-item-input" type="radio" >
+                                    <span class="checkout__order-payment-list-item-input-decor"></span>
+                                    <img class="checkout__order-payment-list-item-img" src="/assets/img/checkout/payment.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- checkout order end -->
                 </div>
+                <!-- inner end -->
 
             </div>
+            <!-- wrapper end -->
         </div>
         <!-- checkout end -->
 

@@ -6,10 +6,32 @@
     @include container();
 }
 
-.checkout__inner {}
+.checkout__inner {
+    display: flex;
+    gap: 70px;
+}
+
+.checkout__wrapper-swiper {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.checkout__wrapper-swiper_active {
+    font-weight: 700;
+}
 
 .form {
     max-width: 722px;
+}
+
+.form__title {}
+
+.form__title-text {
+    margin-bottom: 21px;
+    max-width: 130px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
 }
 
 .form input {
@@ -68,7 +90,9 @@
     margin-bottom: 30px;
 }
 
-.form__country-country {}
+.form__country-country {
+    position: relative;
+}
 
 .form__country-country-title {
     position: relative;
@@ -84,6 +108,13 @@
     font-size: 15px;
     line-height: 15px;
     margin-bottom: 10px;
+}
+
+.form__country-country-vector {
+    cursor: pointer;
+    position: absolute;
+    top: 43px;
+    right: 11px;
 }
 
 // form country end
@@ -114,13 +145,22 @@
     margin-bottom: 30px;
 }
 
-.form__state-state {}
+.form__state-state {
+    position: relative;
+}
 
 .form__state-state-title {
     position: relative;
     font-size: 15px;
     line-height: 15px;
     margin-bottom: 10px;
+}
+
+.form__state-state-vector {
+    cursor: pointer;
+    position: absolute;
+    top: 42px;
+    right: 11px;
 }
 
 .form__state-zip {}
@@ -134,6 +174,7 @@
 
 // form email start
 .form__email {
+    position: relative;
     display: flex;
     gap: 22px;
     margin-bottom: 30px;
@@ -148,7 +189,9 @@
     margin-bottom: 10px;
 }
 
-.form__email-phone {}
+.form__email-phone {
+    position: relative;
+}
 
 .form__email-phone-title {
     position: relative;
@@ -161,8 +204,16 @@
     max-width: 78px;
 }
 
+.form__email-phone-vector {
+    cursor: pointer;
+    position: absolute;
+    top: 42px;
+    right: 37px;
+}
+
 // form email end
 
+// form ship start
 .form__ship {
     display: flex;
     align-items: center;
@@ -170,17 +221,37 @@
 }
 
 #ship {
+    width: 1px;
+    height: 1px;
+    cursor: pointer;
     margin: 0;
     width: 15px;
     display: inline-block;
+
+    &[type="radio"]:checked+.form__ship-radio {
+        background: rgb(70, 163, 88);
+    }
+}
+
+.form__ship-radio {
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 2px solid rgb(70, 163, 88);
 }
 
 .form__ship-label {
+    cursor: pointer;
     margin-left: 3px;
     font-size: 15px;
     font-weight: 500;
     line-height: 16px;
 }
+
+// form ship end
 
 .form__notes {}
 
@@ -191,7 +262,7 @@
     margin-bottom: 10px;
 }
 
-#textarea{
+#textarea {
     border: 1px solid rgb(234, 234, 234);
     width: 350px;
     min-height: 120px;
@@ -202,7 +273,282 @@
     line-height: 15px;
     resize: vertical;
 
-    &:focus{
+    &:focus {
         outline: none;
     }
 }
+
+// form notes end
+
+
+// ============================================
+// checkout order start
+
+.checkout__order {
+    width: 405px;
+}
+
+.checkout__order-title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 21px;
+}
+
+.checkout__order-list {
+    margin-bottom: 17px;
+}
+
+.checkout__order-list-title {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+    margin-bottom: 11px;
+}
+
+.checkout__order-list-item {
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    padding-right: 10px;
+    background: rgb(251, 251, 251);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.checkout__order__list-item-good {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.checkout__order-list-item-good-img {
+    width: 70px;
+}
+
+.checkout__order-list-item-good-sku {}
+
+.checkout__order-list-item-good-sku-title {
+    max-width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+
+.checkout__order-list-item-good-sku-num {
+    text-transform: uppercase;
+    line-height: 16px;
+    color: rgb(165, 165, 165);
+
+    & span {
+        line-height: 16px;
+        color: rgb(114, 114, 114);
+    }
+}
+
+.checkout__order-list-item-num {
+    color: rgb(114, 114, 114);
+    line-height: 16px;
+}
+
+.checkout__order-list-item-total {}
+
+.checkout__order-list-item-total-price {
+    text-align: end;
+    word-break: break-all;
+    width: 80px;
+    max-width: 80px;
+    color: rgb(70, 163, 88);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+// checkout order total start 
+
+.checkout__order-total {
+    margin-bottom: 47px;
+}
+
+.checkout__order-total-coupon {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+.checkout__order-total-coupon-text {
+    line-height: 16px;
+}
+
+.checkout__order-total-coupon-click {
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgb(70, 163, 88);
+    transition: all .1s ease-in;
+
+    &:hover {
+        color: rgb(65, 120, 76);
+    }
+}
+
+.checkout__order-total-coupon-input {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+
+    & input {
+        max-width: 200px;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    & input:focus {
+        outline: none;
+    }
+}
+
+.checkout__order-total-sum {}
+
+.checkout__order-total-sum-inner {}
+
+.checkout__order-total-sum-subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checkout__order-total-sum-subtotal-title {
+    font-size: 15px;
+    max-width: 130px;
+
+    line-height: 16px;
+}
+
+.checkout__order-total-sum-subtotal-price {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.checkout__order-total-sum-discount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checkout__order-total-sum-discount-title {
+    max-width: 130px;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.checkout__order-total-sum-discount-price {
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.checkout__order-total-sum-shiping {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+    margin-bottom: 15px;
+}
+
+.checkout__order-total-sum-shiping-title {
+    max-width: 130px;
+
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.checkout__order-total-sum-shiping-price {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.checkout__order-total-sum-shiping-view {
+    color: rgb(70, 163, 88);
+    line-height: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 0;
+}
+
+.checkout__order-total-result {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout__order-total-result-title {
+    max-width: 130px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.checkout__order-total-result-price {
+    color: rgb(70, 163, 88);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+// payment start
+
+.checkout__order-payment {
+    width: 321px;
+}
+
+.checkout__order-payment-title {}
+
+.checkout__order-payment-list {}
+
+.checkout__order-payment-list-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    padding: 11px 0 8px 11px;
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 3px;
+
+}
+
+.checkout__order-payment-list-item-input {
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout__order-payment-list-item-input-decor {
+    border-radius: 50%;
+    border: 1.2px solid rgb(70, 163, 88);
+    background: black;
+    width: 16px;
+    height: 16px;
+
+}
+
+.checkout__order-payment-list-item-img {}
