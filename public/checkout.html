@@ -10,6 +10,75 @@
 </head>
 
 <body>
+
+    <div class="modal modal-checkout">
+
+        <div class="modal__checkout-active">
+
+            <div class="modal__checkout-content">
+                <!-- modal header start -->
+                <div class="modal__checkout-content-header">
+                    <svg class="modal__checkout-content-header-close" width="18" height="18" viewBox="0 0 18 18" fill=""
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g clip-path="url(#clip12_5223)">
+                            <path id="Vector 139 (Stroke)"
+                                d="M3.16 3.17C3.39 2.94 3.76 2.94 3.99 3.17L9 8.17L14 3.17C14.23 2.94 14.6 2.94 14.83 3.17C15.05 3.39 15.05 3.76 14.83 3.99L9.82 9L14.83 14C15.05 14.23 15.05 14.6 14.83 14.82C14.6 15.05 14.23 15.05 14 14.82L9 9.82L3.99 14.82C3.76 15.05 3.39 15.05 3.16 14.82C2.94 14.6 2.94 14.23 3.16 14L8.17 9L3.16 3.99C2.94 3.76 2.94 3.39 3.16 3.17Z"
+                                fill="" />
+                        </g>
+                    </svg>
+                    <div class="modal__checkout-content-header-img">
+                        <svg width="65" height="80" viewBox="0 0 65 80" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path id="Vector"
+                                d="M28.69 25.93C29.3 26.16 29.97 25.85 30.21 25.25L30.6 24.22L33.37 24.22L33.76 25.25C33.94 25.71 34.38 26 34.86 26C34.99 26 35.13 25.98 35.27 25.93C35.87 25.7 36.18 25.02 35.95 24.42L33.24 17.24C33.24 17.23 33.24 17.22 33.23 17.21C33.02 16.71 32.54 16.38 32 16.38C32 16.38 31.99 16.38 31.99 16.38C31.45 16.38 30.96 16.71 30.76 17.21C30.75 17.22 30.75 17.23 30.75 17.24L28.02 24.41C27.78 25.02 28.09 25.7 28.69 25.93ZM32.49 21.87L31.49 21.87L31.99 20.56L32.49 21.87Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M38.33 26C38.97 26 39.5 25.48 39.5 24.83L39.5 21.33L42.27 25.35C42.61 25.83 43.17 26.03 43.7 25.87C44.25 25.7 44.6 25.19 44.6 24.58L44.53 17.54C44.52 16.9 44 16.38 43.36 16.38C43.35 16.38 43.35 16.38 43.35 16.38C42.7 16.39 42.18 16.92 42.18 17.57L42.22 21.14L39.29 16.9C39 16.48 38.47 16.3 37.98 16.45C37.49 16.6 37.15 17.06 37.15 17.57L37.15 24.83C37.15 25.48 37.68 26 38.33 26Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M47.24 26C47.89 26 48.41 25.48 48.41 24.83L48.41 23.56L50.6 25.68C50.83 25.89 51.12 26 51.42 26C51.72 26 52.03 25.88 52.26 25.65C52.71 25.18 52.7 24.44 52.23 23.99L49.19 21.05L51.95 18.51C52.43 18.07 52.46 17.33 52.02 16.85C51.58 16.38 50.84 16.35 50.36 16.78L48.41 18.58L48.41 17.56C48.41 16.91 47.89 16.38 47.24 16.38C46.6 16.38 46.07 16.91 46.07 17.56L46.07 24.83C46.07 25.48 46.6 26 47.24 26Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M20.4 26C21.05 26 21.57 25.48 21.57 24.83L21.57 22.24L24.27 22.24L24.27 24.83C24.27 25.48 24.79 26 25.44 26C26.09 26 26.61 25.48 26.61 24.83L26.61 17.56C26.61 16.91 26.09 16.38 25.44 16.38C24.79 16.38 24.27 16.91 24.27 17.56L24.27 19.9L21.57 19.9L21.57 17.56C21.57 16.91 21.05 16.38 20.4 16.38C19.76 16.38 19.23 16.91 19.23 17.56L19.23 24.83C19.23 25.48 19.76 26 20.4 26Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M17.65 31.64L19.78 34.9L19.77 38.27C19.77 38.92 20.29 39.44 20.94 39.44L20.94 39.44C21.59 39.44 22.11 38.92 22.11 38.27L22.12 34.9L24.24 31.65C24.59 31.11 24.44 30.38 23.9 30.03C23.35 29.68 22.63 29.83 22.27 30.37L20.95 32.41L19.61 30.35C19.25 29.81 18.53 29.66 17.99 30.01C17.44 30.37 17.29 31.09 17.65 31.64Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M35.72 36C35.72 37.19 36.29 38.16 37.41 38.87C37.99 39.25 38.66 39.44 39.38 39.44L39.38 39.44C40 39.44 40.58 39.31 41.11 39.04C42.41 38.39 43.12 37.31 43.12 36L43.12 30.99C43.12 30.35 42.6 29.82 41.95 29.82C41.3 29.82 40.78 30.35 40.78 30.99L40.78 36C40.78 36.3 40.69 36.63 40.05 36.95C39.85 37.05 39.63 37.1 39.38 37.1C39.38 37.1 39.38 37.1 39.38 37.1C39.11 37.1 38.88 37.03 38.67 36.9C38.11 36.55 38.07 36.27 38.07 36L38.07 30.99C38.07 30.35 37.54 29.82 36.89 29.82C36.25 29.82 35.72 30.35 35.72 30.99L35.72 36L35.72 36Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M12.76 18.73L13.59 18.73L13.59 24.83C13.59 25.48 14.11 26 14.76 26C15.41 26 15.93 25.48 15.93 24.83L15.93 18.73L16.78 18.73C17.42 18.73 17.95 18.2 17.95 17.56C17.95 16.91 17.42 16.38 16.78 16.38L12.76 16.38C12.11 16.38 11.59 16.91 11.59 17.56C11.59 18.2 12.11 18.73 12.76 18.73Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M29.63 29.82C26.97 29.82 24.82 31.98 24.82 34.63C24.82 37.28 26.97 39.44 29.63 39.44C32.28 39.44 34.44 37.28 34.44 34.63C34.44 31.98 32.28 29.82 29.63 29.82ZM29.63 37.1C28.27 37.1 27.16 35.99 27.16 34.63C27.16 33.27 28.27 32.17 29.63 32.17C30.99 32.17 32.09 33.27 32.09 34.63C32.09 35.99 30.99 37.1 29.63 37.1Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                            <path id="Vector"
+                                d="M62.79 28.07L59.34 24.47L59.34 9.46C59.34 7.37 57.64 5.67 55.55 5.67L41.29 5.67C41.28 5.67 41.28 5.66 41.28 5.66L38.51 2.77C36.79 0.98 34.48 0 32 0C29.51 0 27.2 0.98 25.49 2.77L22.7 5.67L8.44 5.67C6.35 5.67 4.65 7.37 4.65 9.46L4.65 24.48L1.2 28.07C0.05 29.27 -0.59 30.84 -0.59 32.51L-0.59 76.21C-0.59 78.3 1.11 80 3.2 80L60.79 80C62.88 80 64.58 78.3 64.58 76.21L64.58 32.51C64.58 30.84 63.94 29.27 62.79 28.07ZM61.1 29.69C61.83 30.45 62.23 31.45 62.23 32.51L62.23 35.16L59.34 38.17L59.34 27.86L61.1 29.69ZM27.18 4.39C28.45 3.07 30.16 2.34 32 2.34C33.83 2.34 35.54 3.07 36.81 4.39L38.04 5.67L25.95 5.67L27.18 4.39ZM8.44 8.01L55.55 8.01C56.35 8.01 57 8.66 57 9.46L57 40.62L44.56 53.57L38.5 47.27C36.79 45.48 34.48 44.49 32 44.49C29.51 44.49 27.2 45.48 25.48 47.27L19.43 53.57L6.99 40.62L6.99 9.46C6.99 8.66 7.64 8.01 8.44 8.01ZM17.81 55.27L1.76 71.98L1.76 38.55L17.81 55.27ZM1.76 32.51C1.76 31.45 2.16 30.45 2.89 29.69L4.65 27.86L4.65 38.17L1.76 35.16L1.76 32.51ZM60.79 77.65L3.2 77.65C2.41 77.65 1.76 77 1.76 76.21L1.76 75.37L27.18 48.89C28.45 47.57 30.16 46.84 32 46.84C33.83 46.84 35.54 47.57 36.81 48.89L46.23 58.69C46.68 59.16 47.42 59.18 47.88 58.73C48.35 58.28 48.37 57.54 47.92 57.07L46.18 55.27L62.23 38.55L62.23 71.98L51.69 61C51.24 60.53 50.5 60.52 50.03 60.96C49.56 61.41 49.55 62.15 50 62.62L62.23 75.37L62.23 76.21C62.23 77 61.58 77.65 60.79 77.65Z"
+                                fill="#46A358" fill-opacity="1.000000" fill-rule="nonzero" />
+                        </svg>
+
+
+                    </div>
+                    <p class="modal__checkout-content-header-title">Your order has been received</p>
+                </div>
+                <!-- modal header end -->
+
+                <div class="modal__checkout-content-ordering">
+                    <div class="modal__checkout-content-ordering-order">
+                        <p class="modal__checkout-content-ordering-order-title">Order Number</p>
+                        <p class="modal__checkout-content-ordering-order-num">19586687</p>
+                    </div>
+                    <div class="modal__checkout-content-ordering-date">
+                        <p class="modal__checkout-content-ordering-date-title">Date</p>
+                        <p class="modal__checkout-content-ordering-date-count">15 Sep, 2021</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="page">
 
         <div class="header page__header">
@@ -128,7 +197,6 @@
 
             <div class="checkout__wrapper">
 
-
                 <p class="checkout__wrapper-swiper">
                     <span class="checkout__wrapper-swiper checkout__wrapper-swiper_active">Home</span>
                     / Shop / Checkout
@@ -136,6 +204,7 @@
 
                 <div class="checkout__inner">
 
+                    <!-- form start -->
                     <form class="form" action="">
 
                         <div class="form__title">
@@ -299,6 +368,7 @@
                             <textarea name="textarea" id="textarea"></textarea>
                         </div>
                     </form>
+                    <!-- form end -->
 
                     <!-- checkout order start -->
                     <div class="checkout__order">
@@ -418,13 +488,46 @@
 
                         <div class="checkout__order-payment">
                             <p class="checkout__order-payment-title">Payment Method</p>
+
                             <div class="checkout__order-payment-list">
+
+                                <!-- item 1 start -->
                                 <div class="checkout__order-payment-list-item">
-                                    <input class="checkout__order-payment-list-item-input" type="radio" >
+                                    <input id="payment" type="radio" name="radio">
                                     <span class="checkout__order-payment-list-item-input-decor"></span>
-                                    <img class="checkout__order-payment-list-item-img" src="/assets/img/checkout/payment.png" alt="">
+                                    <label for="payment">
+                                        <img class="checkout__order-payment-list-item-text"
+                                            src="/assets/img/checkout/payment.png" alt="">
+                                    </label>
                                 </div>
+                                <!-- item 1 end -->
+
+                                <!-- item 2 start -->
+                                <div class="checkout__order-payment-list-item">
+                                    <input id="payment2" type="radio" name="radio">
+                                    <span class="checkout__order-payment-list-item-input-decor"></span>
+                                    <label class="checkout__order-payment-list-item-text" for="payment2">Dorect bank
+                                        transfer</label>
+                                </div>
+                                <!-- item 2 end -->
+
+
+                                <!-- item 3 start -->
+                                <div class="checkout__order-payment-list-item">
+                                    <input id="payment3" type="radio" name="radio">
+                                    <span class="checkout__order-payment-list-item-input-decor"></span>
+                                    <label class="checkout__order-payment-list-item-text" for="payment3">Cash on
+                                        delivery</label>
+                                </div>
+                                <!-- item 3 end -->
                             </div>
+
+                            <div class="checkout__order-payment-button">
+                                <button class="checkout__order-payment-btn">
+                                    Place Order
+                                </button>
+                            </div>
+                            <!-- checkout payment button end -->
                         </div>
 
                     </div>
