@@ -626,8 +626,9 @@
 }
 
 // checkout modal
+.modal {}
 
-.modal {
+.modal-checkout {
     display: none;
     overflow-y: auto;
     position: fixed;
@@ -641,7 +642,6 @@
 .modal__checkout-active {
     position: absolute;
     width: 578px;
-    top: calc(50%);
     left: calc(50% - 175px);
     background-color: rgb(255, 255, 255);
     cursor: default;
