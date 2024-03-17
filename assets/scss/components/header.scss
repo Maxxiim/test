@@ -1,3 +1,4 @@
+// modal login start
 .modal {}
 
 .modal-login {
@@ -74,14 +75,24 @@
 .modal__login-content-auth-text {
     width: 300px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 16px;
     margin-bottom: 14px;
 }
 
 
 .modal__login-form {
+    position: relative;
     margin-bottom: 50px;
+}
+
+.modal__login-form input {
+    border: 1px solid rgb(70, 163, 88);
+
+    &:focus {
+        border: 1px solid rgb(234, 234, 234);
+        outline: none;
+    }
 }
 
 .modal__login-form-input {
@@ -91,7 +102,6 @@
     padding-left: 14px;
     line-height: 16px;
     width: 100%;
-    border: 1px solid rgb(70, 163, 88);
     border-radius: 5px;
 
     &::placeholder {
@@ -132,6 +142,13 @@
     }
 }
 
+.modal__login-form-hide {
+    cursor: pointer;
+    position: absolute;
+    top: 71px;
+    right: 12px;
+    stroke: #727272;
+}
 
 .modal__login-content-social {
     width: 300px;
@@ -218,7 +235,8 @@
     line-height: 16px;
 }
 
-// =============================
+// modal login end
+// =============================================
 
 .header {}
 
