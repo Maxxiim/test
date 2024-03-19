@@ -1,4 +1,5 @@
 import './assets/scss/main.scss';
+openModalWindowLogin();
 
 const point = document.querySelectorAll('.point');
 const slider = document.querySelectorAll('.slider__list-item');
@@ -87,3 +88,23 @@ rangeInput.forEach((input) => {
     });
 });
 // ==================================================================
+
+function openModalWindowLogin() {
+    let statusModal = false;
+
+    document.querySelector('.header__navbar-login').addEventListener('click', () => {
+        fetch('modal.html')
+            .then(response => response.text())
+            .then(data => {
+                const modalWindow = document.querySelector('.modal-login').innerHTML += data;
+                const btnClose = document.querySelector('.modal__content-close');
+                btnClose.addEventListener('click', () => {
+                    if ( modalWindow) {
+                        document.querySelector('.modal-login').style.display = "none";
+                    } else {
+                        document.querySelector('.modal-login').style.display = "block";
+                    }
+                });
+            });
+    });
+};
