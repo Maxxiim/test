@@ -1,7 +1,8 @@
-// modal login start
-.modal {}
+.modal {
+    display: none;
+}
 
-.modal__login {
+.page__modal {
     position: fixed;
     background: rgba(10, 13, 18, 0.25);
     width: 100%;
@@ -10,7 +11,8 @@
     z-index: 1;
 }
 
-.modal__login-active {
+.modal__content {
+    padding-top: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,19 +21,6 @@
     background-color: rgb(255, 255, 255);
     cursor: default;
     border-bottom: 10px solid rgb(70, 163, 88);
-}
-
-.modal__login-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    position: relative;
-}
-
-.modal__login-content-header {
-    margin-bottom: 50px;
 }
 
 .modal__content-close {
@@ -49,85 +38,69 @@
     }
 }
 
-// modal header title text 
-
-.modal__header-title {
-    user-select: none;
+.modal__content-tabs {
+    gap: 11px;
+    position: relative;
     display: flex;
-    user-select: none;
-    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
-.modal__header-title-text {
-    user-select: none;
+.modal__content-tabs-tab {
     cursor: pointer;
+    border: none;
+    background: none;
     font-size: 20px;
     font-weight: 500;
     line-height: 16px;
-    transition: all .2s ease-in;
+    transition: all .13s ease-in;
 
     &:hover {
         color: rgb(70, 163, 88);
     }
 }
 
-.modal__header-title-text-login {}
-
-.modal__header-title-text-login_active {
-    user-select: none;
+.modal__content-tabs-tab_active {
     color: rgb(70, 163, 88);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 16px;
 }
 
-// modal header title text end
-
-
-
-.modal__login-content-hedaer-title-separator {
-    width: 1px;
+.modal__content-tabs-separator {
     height: 16px;
-    background: rgb(61, 61, 61);
+    width: 1px;
+    background-color: black;
 }
 
+// ===================================
+// modal login start
 
-.modal__login-content-auth {
-    position: relative;
-    width: 300px;
+.modal__login {
+    text-align: center;
 }
 
-.modal__login-content-auth-text {
-    width: 300px;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 16px;
+.modal__login-title {
     margin-bottom: 14px;
 }
-
 
 .modal__login-form {
     position: relative;
-    margin-bottom: 50px;
-}
-
-.modal__login-form input {
-    border: 1px solid rgb(70, 163, 88);
-
-    &:focus {
-        border: 1px solid rgb(234, 234, 234);
-        outline: none;
-    }
+    width: 300px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .modal__login-form-input {
+    width: 300px;
+    cursor: pointer;
     margin-bottom: 17px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 14px;
     line-height: 16px;
-    width: 100%;
     border-radius: 5px;
+
+
 
     &::placeholder {
         line-height: 16px;
@@ -136,20 +109,49 @@
 
 }
 
-
-.modal__login-form-forgot {
-    cursor: pointer;
-    text-align: end;
-    color: rgb(70, 163, 88);
-    line-height: 16px;
-    margin-bottom: 30px;
+.modal__login-form input {
+    border: 1px solid rgb(165, 165, 165);
+    transition: all .2s ease-in;
 
     &:hover {
-        color: rgb(71, 144, 86);
+    border: 1px solid rgb(70, 163, 88);
+    }
+
+    &:focus {
+    border: 1px solid rgb(70, 163, 88);
+
+        outline: none;
     }
 }
 
-.modal__login-form-button {
+.form-hide__login {
+    cursor: pointer;
+    position: absolute;
+    top: 73px;
+    right: 13px;
+    fill: #fff;
+    stroke: rgb(114, 114, 114);
+    ;
+
+    &:hover {
+        stroke: rgb(70, 163, 88);
+    }
+}
+
+
+.modal__lofin-form-forgot {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: rgb(71, 144, 86);
+    margin-bottom: 27px;
+
+    &:hover {
+        color: rgb(52, 112, 64);
+    }
+}
+
+.modal__login-form-btn {
     cursor: pointer;
     border-radius: 5px;
     background: rgb(70, 163, 88);
@@ -161,237 +163,162 @@
     line-height: 16px;
     padding: 16px 0;
     transition: all .2s ease-in;
+    margin-bottom: 40px;
 
     &:hover {
         background: rgb(53, 117, 66);
     }
 }
 
-.modal__login-form-hide {
-    cursor: pointer;
-    position: absolute;
-    top: 71px;
-    right: 12px;
-    stroke: #727272;
-}
+.modal__social {}
 
-.modal__login-content-social {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
-
-.modal__login-content-social-title {
+.modal__social-title {
     gap: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 27px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 40px;
 }
 
-.modal__login-content-social-title-line {
+.modal__social-title-line {
     display: inline-block;
     width: 100px;
     height: 1px;
     background: rgb(234, 234, 234);
 }
 
-.modal__login-content-social-title-text {
-    width: 80px;
+.modal__social-title-text {
+    width: 100px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
 }
 
-// google start
-.modal__login-content-social-google {
+.modal__social-google {
     cursor: pointer;
-    color: rgb(114, 114, 114);
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
+    padding: 10px;
+    border-radius: 5px;
     gap: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 5px;
-    border: 1px solid rgb(234, 234, 234);
     margin-bottom: 15px;
-    transition: all .2s ease-in;
-
-    &:hover {
-        color: rgb(60, 21, 237);
-    }
+    border: 1px solid rgb(234, 234, 234);
 }
 
-.modal__login-content-social-google-text {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-}
-
-// facebook start
-
-.modal__login-content-social-facebook {
-    cursor: pointer;
+.modal__social-google-text {
     color: rgb(114, 114, 114);
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
+
+    &:hover {
+        color: #1c4bb1;
+    }
+}
+
+.modal__social-facebook {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
     gap: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 5px;
+    margin-bottom: 15px;
     border: 1px solid rgb(234, 234, 234);
-    transition: all .2s ease-in;
-
-    &:hover {
-        color: rgb(60, 21, 237);
-    }
 }
 
-.modal__login-content-social-facebook-text {
+.modal__social-facebook-text {
+    color: rgb(114, 114, 114);
     font-size: 13px;
     font-weight: 500;
     line-height: 16px;
+
+    &:hover {
+        color: #1c4bb1;
+    }
 }
 
 // modal login end
-// =============================================
-// modal register start 
 
-.modal {}
+// ===================================
+// modal register start
 
-.modal__registr {
+.modal__register {
     display: none;
-    position: fixed;
-    background: rgba(10, 13, 18, 0.25);
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    z-index: 1;
+    text-align: center;
 }
 
-.modal__registr-active {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 578px;
-    background-color: rgb(255, 255, 255);
-    cursor: default;
-    border-bottom: 10px solid rgb(70, 163, 88);
-}
-
-.modal__registr-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    position: relative;
-}
-
-.modal__registr-content-header {
-    margin-bottom: 50px;
-}
-
-// modal header title text 
-
-.modal__header-title {
-    user-select: none;
-    display: flex;
-    user-select: none;
-    gap: 30px;
-}
-
-.modal__header-title-text {
-    user-select: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 16px;
-    transition: all .2s ease-in;
-
-    &:hover {
-        color: rgb(70, 163, 88);
-    }
-}
-
-.modal__header-title-text-login {}
-
-.modal__header-title-text-registr_active {
-    user-select: none;
-    color: rgb(70, 163, 88);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 16px;
-}
-
-// modal header title text end
-
-.modal__registr-content-hedaer-title-separator {
-    width: 1px;
-    height: 16px;
-    background: rgb(61, 61, 61);
-}
-
-
-.modal__registr-content-auth {
-    position: relative;
-    width: 300px;
-}
-
-.modal__registr-content-auth-text {
-    width: 300px;
+.modal__register-title {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 16px;
     margin-bottom: 14px;
 }
 
-.modal__registr-form {
+.modal__register-form {
     position: relative;
-    margin-bottom: 40px;
+    width: 300px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.modal__registr-form input {
-    border: 1px solid rgb(70, 163, 88);
+.modal__register-form input {
+    border: 1px solid rgb(234, 234, 234);
+
+    transition: all .2s ease-in;
+
+    &:hover {
+        border: 1px solid rgb(70, 163, 88);
+
+    }
 
     &:focus {
-        border: 1px solid rgb(234, 234, 234);
+        border: 1px solid rgb(70, 163, 88);
+
         outline: none;
     }
+
 }
 
-.modal__registr-form-input {
-    margin-bottom: 17px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 14px;
-    line-height: 16px;
-    width: 100%;
+.modal__register-form-input {
+    cursor: pointer;
+    width: 300px;
     border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(234, 234, 234);
+    margin-bottom: 16px;
+
 
     &::placeholder {
-        line-height: 16px;
         color: rgb(165, 165, 165);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
     }
 }
 
-.modal__registr-form-hide {
+.form-hide__register {
     cursor: pointer;
     position: absolute;
-    top: 130px;
-    right: 12px;
-    stroke: #727272;
+    top: 119px;
+    right: 13px;
+    fill: #fff;
+    stroke: rgb(114, 114, 114);
+
+    &:hover {
+        stroke: rgb(70, 163, 88);
+    }
 }
 
 
-.modal__registr-form-button {
+.modal__register-form-btn {
     cursor: pointer;
     border-radius: 5px;
     background: rgb(70, 163, 88);
@@ -403,89 +330,28 @@
     line-height: 16px;
     padding: 16px 0;
     transition: all .2s ease-in;
+    margin-bottom: 40px;
 
     &:hover {
         background: rgb(53, 117, 66);
     }
 }
 
-.modal__registr-content-social {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
+.modal__social {}
 
-.modal__registr-content-social-title {
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 27px;
-}
+.modal__social-title {}
 
-.modal__registr-content-social-title-line {
-    display: inline-block;
-    width: 100px;
-    height: 1px;
-    background: rgb(234, 234, 234);
-}
+.modal__social-title-line {}
 
-.modal__registr-content-social-title-text {
-    width: 100px;
-}
+.modal__social-title-text {}
 
-.modal__registr-content-social-google {
-    cursor: pointer;
-    color: rgb(114, 114, 114);
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-    gap: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 5px;
-    border: 1px solid rgb(234, 234, 234);
-    margin-bottom: 15px;
-    transition: all .2s ease-in;
+.modal__social-google {}
 
-    &:hover {
-        color: rgb(60, 21, 237);
-    }
-}
+.modal__social-google-text {}
 
-.modal__login-content-social-google-text {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-}
+.modal__social-facebook {}
 
-.modal__registr-content-social-facebook {
-    cursor: pointer;
-    color: rgb(114, 114, 114);
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-    gap: 13px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 5px;
-    border: 1px solid rgb(234, 234, 234);
-    transition: all .2s ease-in;
+.modal__social-facebook-text {}
 
-    &:hover {
-        color: rgb(60, 21, 237);
-    }
-}
-
-.modal__registr-content-social-facebook-text {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 16px;
-}
+// modal register end
+// ===================================

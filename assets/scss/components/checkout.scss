@@ -642,7 +642,9 @@
 .modal__checkout-active {
     position: absolute;
     width: 578px;
-    left: calc(50% - 175px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -42%);
     background-color: rgb(255, 255, 255);
     cursor: default;
     border-bottom: 10px solid rgb(70, 163, 88);

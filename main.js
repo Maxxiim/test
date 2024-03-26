@@ -1,6 +1,12 @@
+import { compile } from 'sass';
 import './assets/scss/main.scss';
-openModalWindowLogin();
 
+openModalOrder();
+openModalWindow();
+
+
+// ==================================================================
+// slider start
 const point = document.querySelectorAll('.point');
 const slider = document.querySelectorAll('.slider__list-item');
 
@@ -41,7 +47,7 @@ function autoSlider() {
 let sliderTimer = 1000 * 3;
 let timerSlider = setInterval(() => autoSlider(), sliderTimer);
 
-// ==================================================================
+// ================================================================
 // unput range filter price
 
 const rangeInput = document.querySelectorAll('.price-input__slider-range-input input');
@@ -89,22 +95,90 @@ rangeInput.forEach((input) => {
 });
 // ==================================================================
 
-function openModalWindowLogin() {
-    let statusModal = false;
 
-    document.querySelector('.header__navbar-login').addEventListener('click', () => {
-        fetch('modal.html')
-            .then(response => response.text())
-            .then(data => {
-                const modalWindow = document.querySelector('.modal-login').innerHTML += data;
-                const btnClose = document.querySelector('.modal__content-close');
-                btnClose.addEventListener('click', () => {
-                    if ( modalWindow) {
-                        document.querySelector('.modal-login').style.display = "none";
-                    } else {
-                        document.querySelector('.modal-login').style.display = "block";
-                    }
-                });
+function openModalWindow() {
+
+    const OpenModal = document.querySelector('.header__navbar-login');
+
+    OpenModal.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        const modalLogin = document.getElementById('modalLogin');
+        const modalRegister = document.getElementById('modalRegister');
+
+        modal.style.display = "block";
+        modalLogin.style.display = "block";
+
+        const btnCloseModal = document.getElementById('btnCloseModal');
+        btnCloseModal.addEventListener('click', () => {
+            modal.style.display = "none";
+            modalLogin.style.display = "none"
+            modalRegister.style.display = "none"
+            btnTabLogin.classList.add('modal__content-tabs-tab_active');
+            btnTabRegister.classList.remove('modal__content-tabs-tab_active');
+        })
+
+        const btnTabLogin = document.getElementById('btnTabLogin');
+        btnTabLogin.addEventListener('click', () => {
+            btnTabLogin.classList.add('modal__content-tabs-tab_active');
+            btnTabRegister.classList.remove('modal__content-tabs-tab_active');
+            modalLogin.style.display = "block"
+            modalRegister.style.display = "none"
+        })
+
+        const btnTabRegister = document.getElementById('btnTabRegister');
+        btnTabRegister.addEventListener('click', () => {
+            btnTabLogin.classList.remove('modal__content-tabs-tab_active');
+            btnTabRegister.classList.add('modal__content-tabs-tab_active');
+            modalLogin.style.display = "none"
+            modalRegister.style.display = "block"
+
+            const showPassword = document.querySelector('.form-hide__register');
+            showPassword.addEventListener('click', () => {
+                const showRegisterPassword = document.getElementById('registerPassword');
+                if (showRegisterPassword.type === "password") {
+                    showRegisterPassword.type = "text"
+                    showPassword.style.stroke = "rgb(70, 163, 88)"
+                } else {
+                    showRegisterPassword.type = "password"
+                    showPassword.style.stroke = "rgb(114, 114, 114)"
+                }
             });
+        });
     });
+
+    window.onclick = function (e) {
+        if (e.target === modal) {
+            document.getElementById('modal').style.display = "none";
+            modalRegister.style.display = "none";
+            modalLogin.style.display = "none"
+            btnTabLogin.classList.add('modal__content-tabs-tab_active');
+            btnTabRegister.classList.remove('modal__content-tabs-tab_active');
+        };
+    };
+};
+
+function openModalOrder() {
+    document.addEventListener('DOMContentLoaded', () => {
+        const btnPlaceOrder = document.querySelector('.checkout__order-payment-btn');
+        btnPlaceOrder.addEventListener('click', () => {
+            const modalOrderPlace = document.querySelector('.modal-checkout');
+            modalOrderPlace.style.display = "block";
+            document.body.style.overflow = "hidden";
+
+            const btnCloseModalOrder = document.getElementById('btnCLoseOrder');
+            btnCloseModalOrder.addEventListener('click', () => {
+                modalOrderPlace.style.display = "none";
+            })
+
+            window.onclick = function (e) {
+                if (e.target === modalOrder) {
+                    modalOrderPlace.style.display = "none";
+                }
+                if (modalOrder.style.display === "none") {
+                    document.body.style.overflow = "auto";
+                }
+            };
+
+        })
+    })
 };

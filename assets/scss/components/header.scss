@@ -73,15 +73,24 @@
 // header navbar start
 
 .header__navbar {
+    position: relative;
     display: flex;
 }
 
 .header__navbar-search {
+    position: relative;
     width: 20px;
     cursor: pointer;
+    fill: rgb(61, 61, 61);
+    transition: all .2s ease;
+
+    &:hover {
+        fill: rgb(70, 163, 88);
+    }
 
     &_img {}
-}
+}   
+
 
 .header__navbar-basket {
     margin-left: 30px;
@@ -141,11 +150,12 @@
         display: inline;
     }
 }
-.header__navbar-login_text{
+
+.header__navbar-login_text {
     text-align: center;
     background: none;
 }
 
-.header__navbar-login_img{
+.header__navbar-login_img {
     background: none;
 }
