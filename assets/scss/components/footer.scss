@@ -4,8 +4,13 @@
 
 .footer__inner {
     @include container();
-    background: #FBFBFB;
     padding: 25px 25px 23px 24px;
+
+    @include media("max", "xs") {
+        padding: 0 15px;
+        width: 320px;
+        max-width: 320px;
+    }
 }
 
 // footer recomendation start
@@ -14,12 +19,26 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
+
+    @include media("max", "xs") {
+        max-width: 320px;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .footer__recomendation-list {
     display: flex;
     width: 100%;
     justify-content: space-between;
+
+    @include media("max", "xs") {
+        display: none;
+        max-width: 320px;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .footer__recomendation-list-item {
@@ -40,6 +59,19 @@
         height: 100%;
         background: rgba(70, 163, 88, 0.1);
     }
+
+    @include media("max", "xs") {
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 30px;
+
+        // background: linear-gradient(134.12deg, rgba(70, 163, 88, 0.2) 1.082%, rgba(70, 163, 88, 0.1) 99.232%);
+
+        &::after,
+        &::before {
+            display: none;
+        }
+    }
 }
 
 .footer__recomendation-list-item-title {
@@ -48,18 +80,34 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 16px;
+
+    @include media("max", "xs") {
+        font-size: 24px;
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
 }
 
 .footer__recomendation-list-item-description {
     color: rgb(114, 114, 114);
     line-height: 22px;
     max-width: 204px;
+
+    @include media("max", "xs") {
+        font-size: 20px;
+        max-width: 200px;
+    }
 }
 
 .footer__newsletters {
     position: relative;
     width: 354px;
     margin-left: 62px;
+
+    @include media("max", "xs") {
+        width: 320px;
+        margin-left: 0;
+    }
 }
 
 .footer__newsletters-title {
@@ -90,6 +138,10 @@
     &:focus {
         outline: none;
     }
+
+    @include media("max", "xs") {
+        min-width: 200px;
+    }
 }
 
 .footer__newsletters-btn {
@@ -110,6 +162,14 @@
     &:hover {
         background: rgb(57, 124, 71);
     }
+
+    @include media("max", "xs") {
+        right: 45px;
+
+        &:hover {
+            pointer-events: none;
+        }
+    }
 }
 
 .footer__newsletters-description {
@@ -118,6 +178,10 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 22px;
+
+    @include media("max", "xs") {
+        min-width: 320px;
+    }
 }
 
 // footer recomendation end
@@ -129,24 +193,59 @@
     margin-left: -24px;
     margin-right: -24px;
     background: rgba(70, 163, 88, 0.1);
+
+    @include media("max", "xs") {
+        background: none;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .footer__contacts-list {
     display: flex;
     justify-content: space-between;
+
+    @include media("max", "xs") {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer__contacts-list-item {
     display: flex;
     align-items: center;
     gap: 10px;
+
+
+    @include media("max", "xs") {
+        width: 320px;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .footer__contacts-list-item-logo {
-    width: 150px;
+    width: 200px;
+
+    @include media("max", "xs") {
+        display: inline-flex;
+        width: 320px;
+        margin-bottom: 30px;
+        padding-right: 15px;
+        pointer-events: none;
+    }
 }
 
-.footer__contacts-list-item-mark {}
+.footer__contacts-list-item-mark {
+    @include media("max", "xs") {
+        margin-bottom: 10px;
+    }
+}
 
 .footer__contacts-list-item-street {
     width: 200px;
@@ -154,9 +253,9 @@
     line-height: 22px;
     transition: all .2s ease-in;
 
-    &:hover {
-        font-size: 15px;
-        font-weight: 700;
+    @include media("max", "xs") {
+        margin-bottom: 10px;
+        pointer-events: none;
     }
 }
 
@@ -165,10 +264,10 @@
     max-width: 250px;
     transition: all .2s ease-in-out;
 
-    &:hover {
-        max-width: 250px;
-        font-size: 15px;
-        font-weight: 700;
+    @include media("max", "xs") {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        pointer-events: none;
     }
 }
 
@@ -177,9 +276,9 @@
     max-width: 250px;
     transition: all .2s ease-in;
 
-    &:hover {
-        font-size: 15px;
-        font-weight: 700;
+    @include media("max", "xs") {
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -191,12 +290,24 @@
     margin-top: 33px;
     display: flex;
     justify-content: space-between;
+
+    @include media("max", "xs") {
+        width: 320px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__menu-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include media("max", "xs") {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer__menu-list-item {
@@ -204,6 +315,11 @@
     flex-direction: column;
     width: 140px;
     max-width: 170px;
+
+    @include media("max", "xs") {
+        margin-bottom: 30px;
+
+    }
 }
 
 .footer__menu-list-item-title {
@@ -211,6 +327,10 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
+
+    @include media("max", "xs") {
+        margin-bottom: 20px;
+    }
 }
 
 .footer__menu-list-item-link {
@@ -227,6 +347,17 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @include media("max", "xs") {
+
+        &:hover {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        line-height: 26px;
+        margin-bottom: 5px;
+    }
 }
 
 // footer menu end
@@ -236,6 +367,14 @@
     min-width: 344px;
     display: flex;
     flex-direction: column;
+
+    @include media("max", "xs") {
+        margin-bottom: 15px;
+        margin-left: 0;
+        max-width: 320px;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer__menu-payments-social {
@@ -252,6 +391,10 @@
 .footer__menu-payments-social-list {
     display: flex;
     gap: 10px;
+
+    @include media("max", "xs") {
+        gap: 20px;
+    }
 }
 
 .footer__menu-payments-social-list-item {

@@ -3,11 +3,21 @@
 .page__blog {
     margin-top: 138px;
     margin-bottom: 100px;
+
+    @include media("max", "xs") {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 }
 
 .blog__inner {
     @include container();
     text-align: center;
+
+    @include media("max", "xs") {
+        width: 320px;
+        max-width: 320px;
+    }
 }
 
 .blog__inner-title {
@@ -21,6 +31,8 @@
     color: rgb(114, 114, 114);
     line-height: 24px;
     margin-bottom: 35px;
+
+    @include media("max", "xs") {}
 }
 
 .blog__cards {}
@@ -36,6 +48,12 @@
     flex-direction: column;
     text-align: left;
     max-width: 286px;
+
+    @include media("max", "xs") {
+        max-width: 320px;
+        width: 320px;
+        margin-bottom: 30px;
+    }
 }
 
 .blog__cards-list-item-img {
@@ -43,11 +61,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include media("max", "xs") {
+        border-radius: 20px 20px 0 0;
+
+    }
 }
 
 .blog__cards-list-item-content {
     background: rgb(251, 251, 251);
     padding: 9px 33px 13px 15px;
+
+    @include media("max", "xs") {
+        padding: 9px 15px 13px 15px;
+        border-radius: 0 0 20px 20px;
+        background: linear-gradient(134.12deg, rgba(70, 163, 88, 0.2) 1.082%, rgba(70, 163, 88, 0.1) 99.232%);
+    }
 }
 
 .blog__cards-list-item-date {
@@ -93,5 +122,10 @@
     &:hover {
         color: rgb(70, 163, 88);
         fill: rgb(70, 163, 88);
+    }
+
+    @include media("max", "xs") {
+        font-size: 16px;
+        pointer-events: none;
     }
 }

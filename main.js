@@ -1,6 +1,7 @@
 import { compile } from 'sass';
 import './assets/scss/main.scss';
 
+openModalFilterGoods()
 openModalOrder();
 openModalWindow();
 
@@ -180,5 +181,25 @@ function openModalOrder() {
             };
 
         })
+    })
+};
+
+function openModalFilterGoods() {
+    const btnModalFilterMob = document.querySelector(".header__navbar-filter-img");
+    btnModalFilterMob.addEventListener('click', () => {
+        const modalFitlerGoodsMob = document.getElementById('goodsFilter');
+        modalFitlerGoodsMob.style.display = "block";
+        document.body.style.overflow = "hidden";
+
+        window.onclick = function (e) {
+            if (e.target === btnModalFilterMob) {
+                modalFitlerGoodsMob.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+            else {
+                modalFitlerGoodsMob.style.display = "block";
+                document.body.style.overflow = "hidden";
+            }
+        }
     })
 };

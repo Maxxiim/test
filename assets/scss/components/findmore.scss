@@ -1,12 +1,18 @@
 .findMore {}
 
-.page__findMore {
-}
+.page__findMore {}
 
 .findMore__inner {
     @include container();
     display: flex;
     justify-content: space-between;
+
+    @include media("max", "xs") {
+        max-width: 320px;
+        width: 320px;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .findMore__inner-card {
@@ -17,12 +23,23 @@
     width: 568px;
     height: 250px;
     background-color: #FBFBFB;
+
+    @include media("max", "xs") {
+        width: 300px;
+        margin-bottom: 20px;
+        background: linear-gradient(134.12deg, rgba(70, 163, 88, 0.2) 1.082%, rgba(70, 163, 88, 0.1) 99.232%);
+        border-radius: 20px;
+    }
 }
 
 .findMore__inner-card-img {
     position: absolute;
     left: 0;
     top: -50px;
+
+    @include media("max", "xs") {
+        display: none;
+    }
 }
 
 .findMore__inner-card-content {
@@ -31,6 +48,11 @@
     align-items: flex-end;
     text-align: end;
     max-width: 300px;
+
+    @include media("max", "xs") {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .findMore__inner-card-content-title {
@@ -67,6 +89,13 @@
 
     &:hover {
         background-color: rgb(55, 118, 67);
+
+    }
+
+    @include media("max", "xs") {
+        &:hover {
+            background-color: rgb(70, 163, 88);
+        }
 
     }
 }

@@ -1,5 +1,15 @@
 @mixin container {
-    margin: 0 auto;
-    max-width: 1300px;
-    padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 15px;
+}
+
+@mixin media($minmax, $media) {
+  @each $size, $resolution in $sizes {
+    @if $media ==$size {
+      @media only screen and (#{$minmax}-width: $resolution) {
+        @content;
+      }
+    }
+  }
 }
