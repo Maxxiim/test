@@ -110,6 +110,12 @@
     }
 }
 
+.footer__newsletters-mob{
+    @include media("max", "xs"){
+        display: none;
+    }
+}
+
 .footer__newsletters-title {
     font-size: 18px;
     font-weight: 700;

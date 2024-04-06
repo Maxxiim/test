@@ -2,10 +2,15 @@
 
 .page-releted {
     margin-bottom: 128px;
+
+    @include media("max", "xs"){
+        display: none;
+    }
 }
 
 .releted__inner {
     @include container();
+
 }
 
 .releter__inner-title {
@@ -15,6 +20,7 @@
     line-height: 16px;
     padding-bottom: 11px;
     border-bottom: .3px solid rgba(70, 163, 88, 0.5);
+
 }
 
 .slider-products {

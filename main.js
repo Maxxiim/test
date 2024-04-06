@@ -203,3 +203,14 @@ function openModalFilterGoods() {
         }
     })
 };
+
+function openCardGoodMob() {
+
+    window.onclick = function (e) {
+        if (e.target.classList == "catalog-card__list-item-img") {
+            window.location.href = "shop.html"
+        }
+    }
+};
+
+openCardGoodMob();

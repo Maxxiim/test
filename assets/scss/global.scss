@@ -26,16 +26,18 @@ li {
 }
 
 body {
-    min-height: 100vh;
     margin: 0;
     padding: 0;
-    padding-bottom: 100px;
     font-weight: 400;
     font-size: 14px;
     font-family: 'Cera Pro', sans-serif;
     background: rgba(255, 255, 255, 1);
     color: rgba(61, 61, 61, 1);
 
+    @include media("max", "xs") {
+        padding-bottom: 200px;
+        min-height: 100vh;
+    }
 }
 
 input[type="number"]::-webkit-inner-spin-button,

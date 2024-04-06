@@ -224,8 +224,9 @@
             <!-- modal content end -->
         </div>
 
-        <div class="header page__header">
+        <div class="header page__header header__mob">
             <div class="header__inner">
+
                 <div class="header__logo">
                     <a class="header__logo header__logo_link" href="/index.html">
                         <svg viewBox="0 0 150 35">
@@ -299,11 +300,15 @@
 
                 <div class="header__navbar">
                     <div class="header__navbar-search">
-                        <svg class="header__navbar-search header__navbar-search_img" viewBox="0 0 20 20">
+
+                        <svg class="header__navbar-search-img" viewBox="0 0 20 20">
                             <path
                                 d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z"
-                                fill="#3D3D3D" />
+                                fill="" />
                         </svg>
+
+                        <input class="header__navbar-search-input" type="text" placeholder="Find to plants">
+
                     </div>
                     <!-- navbar search end -->
 
@@ -345,7 +350,23 @@
                 </p>
 
                 <div class="product__inner-info">
+
                     <!-- left start -->
+
+                    <!-- info left mob start -->
+                    <div class="product__inner-info-img-mob">
+                        <div class="product__inner-info-img-mob-wrapper">
+                            <div
+                                class="product__inner-info-img-mob-wrapper-item product__inner-info-img-mob-wrapper-item_active">
+                                <img src="/assets/img/product/flo1.png" alt="">
+                            </div>
+                            <div class="product__inner-info-img-mob-wrapper-item">
+                                <img src="/assets/img/product/flow2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- info left mob end -->
+
                     <div class="product__inner-info-left">
                         <!-- wrapper img start -->
                         <div class="product__inner-info-left-wrapper">
@@ -385,9 +406,28 @@
 
                             <h3 class="product__inner-info-right-title">Barberton Daisy</h3>
 
+                            <!-- right raiting title mob  -->
+                            <a class="product__inner-info-right-raiting-mob">
+
+                                <h3 class="product__inner-info-right-mob-title">Barberton Daisy</h3>
+
+                                <!-- rating mob start -->
+                                <div class="product__inner-info-right-rating-mob">
+
+                                    <div class="product__inner-info-right-rating-stars-mob">
+                                        <span
+                                            class="product__inner-info-right-rating-star product__inner-info-right-rating-star_active"></span>
+                                    </div>
+                                    <p class="product__inner-info-right-raiting-mob-count">4.8</p>
+                                    <p class="product__inner-info-right-raiting-mob-comm">( 19 )</p>
+                                </div>
+
+                            </a>
+
                             <!-- coast start -->
                             <div class="product__inner-info-right-coast">
                                 <p class="product__inner-info-right-price">$119.00</p>
+
 
                                 <!-- rating start -->
                                 <div class="product__inner-info-right-rating">
@@ -420,9 +460,15 @@
                             <!-- description start -->
                             <div class="product__inner-info-right-description">
                                 <p class="product__inner-info-right-description-title">Short Description:</p>
+
                                 <p class="product__inner-info-right-description-text">The ceramic cylinder planters come
                                     with a wooden stand to help elevate your plants off the ground. The ceramic cylinder
                                     planters come with a wooden stand to help elevate your plants off the ground. </p>
+
+                                <p class="product__inner-info-right-description-text-mob">The ceramic cylinder planters
+                                    come
+                                    with a wooden stand to help elevate your plants off the ground. The ceramic cylinder
+                                    planters come.</p>
                             </div>
                             <!-- description end -->
 
@@ -465,6 +511,44 @@
                                             fill="" />
                                     </svg>
                                 </button>
+                            </div>
+
+                            <div class="product__inner-info-right-count-mob">
+                                <div class="count-wrap__mob">
+                                    <span class="count-wrap__mob-text">Qty</span>
+                                    <div class="count-wrap__mob-btns">
+                                        <button class="count-wrap__mob-btn count-wrap__mob-btn_minus">
+                                        </button>
+                                        <input class="quantity quantity__mob" type="number" value="1" min="1"
+                                            max="999" />
+                                        <button class="count-wrap-mob__btn count-wrap__mob-btn_plus">
+                                        </button>
+                                    </div>
+                                    <p class="count-wrap__mob-price">$119.00</p>
+                                </div>
+
+                                <div class="count-wrap__mob">
+                                    <button class="product__inner-product-info-right-count-mob-buy">Buy NOW</button>
+                                    <button class="product__inner-product-info-right-count-mob-add">
+                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs />
+                                            <path id="Vector"
+                                                d="M17.33 4.8L16.38 10.77C16.21 11.95 15.27 12.71 14.07 12.71L5.83 12.71C4.72 12.71 3.69 11.87 3.52 10.77L2.49 3.79L2.23 1.85C2.14 1.35 1.72 1.01 1.12 1.01L0.51 1.01C0.17 1.01 -0.17 0.67 -0.17 0.34C-0.17 0 0.17 -0.34 0.51 -0.34L1.12 -0.34C2.32 -0.34 3.35 0.5 3.43 1.68L3.6 3.03L15.78 3.03C16.21 3.03 16.64 3.2 16.9 3.53C17.24 3.87 17.33 4.38 17.33 4.8ZM6.52 15.49C6.52 15.95 6.13 16.33 5.66 16.33C5.19 16.33 4.8 15.95 4.8 15.49C4.8 15.02 5.19 14.64 5.66 14.64C6.13 14.64 6.52 15.02 6.52 15.49ZM14.24 16.33C14.71 16.33 15.1 15.95 15.1 15.49C15.1 15.02 14.71 14.64 14.24 14.64C13.77 14.64 13.38 15.02 13.38 15.49C13.38 15.95 13.77 16.33 14.24 16.33Z"
+                                                fill="#727272" fill-opacity="1.000000" fill-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <button class="product__inner-product-info-right-count-mob-favorite">
+                                        <svg width="20px" height="20px" viewBox="0 0 20 20" fill=""
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10 18.8873C9.71527 18.8873 9.44077 18.7842 9.22684 18.5968C8.41888 17.8903 7.63992 17.2264 6.95267 16.6408L6.94916 16.6377C4.93423 14.9207 3.19427 13.4378 1.98364 11.9771C0.630341 10.3441 0 8.79578 0 7.10434C0 5.46097 0.563507 3.94485 1.58661 2.83508C2.62192 1.71219 4.04251 1.09375 5.58716 1.09375C6.74164 1.09375 7.79892 1.45874 8.72955 2.1785C9.19922 2.54181 9.62494 2.98645 10 3.5051C10.3752 2.98645 10.8008 2.54181 11.2706 2.1785C12.2012 1.45874 13.2585 1.09375 14.413 1.09375C15.9575 1.09375 17.3782 1.71219 18.4135 2.83508C19.4366 3.94485 20 5.46097 20 7.10434C20 8.79578 19.3698 10.3441 18.0165 11.9769C16.8059 13.4378 15.0661 14.9205 13.0515 16.6374C12.363 17.224 11.5828 17.8889 10.773 18.5971C10.5592 18.7842 10.2846 18.8873 10 18.8873ZM5.58716 2.26532C4.37363 2.26532 3.25882 2.74963 2.44781 3.62915C1.62476 4.52194 1.17142 5.75607 1.17142 7.10434C1.17142 8.52692 1.70013 9.79919 2.88559 11.2296C4.03137 12.6122 5.73563 14.0645 7.70889 15.7462L7.71255 15.7492C8.4024 16.3371 9.18442 17.0036 9.99832 17.7153C10.8171 17.0023 11.6003 16.3347 12.2916 15.7458C14.2647 14.0642 15.9688 12.6122 17.1146 11.2296C18.2999 9.79919 18.8286 8.52692 18.8286 7.10434C18.8286 5.75607 18.3752 4.52194 17.5522 3.62915C16.7413 2.74963 15.6264 2.26532 14.413 2.26532C13.524 2.26532 12.7078 2.54791 11.9872 3.10516C11.3449 3.60199 10.8975 4.23004 10.6352 4.66949C10.5003 4.89548 10.2629 5.03036 10 5.03036C9.73709 5.03036 9.49966 4.89548 9.36478 4.66949C9.10263 4.23004 8.65524 3.60199 8.01285 3.10516C7.29218 2.54791 6.47598 2.26532 5.58716 2.26532Z"
+                                                fill="" />
+                                        </svg>
+                                    </button>
+                                </div>
+
                             </div>
                             <!-- count start -->
 
@@ -568,7 +652,7 @@
                         <div class="product__inner-description-sections">
                             <p class="product__inner-description-section product__inner-description-section_active">
                                 Product Description</p>
-                            <p class="product__inner-description-section">
+                            <p class="product__inner-description-section product__inner-description-section-reviews">
                                 Reviews
                                 <span>(19)</span>
                             </p>
@@ -741,7 +825,7 @@
                         </div>
                     </div>
                     <!-- newslatters start -->
-                    <div class="footer__newsletters">
+                    <div class="footer__newsletters footer__newsletters-mob">
                         <p class="footer__newsletters-title">Would you like to join newsletters?</p>
                         <input class="footer__newsletters-input" type="email" placeholder="enter your email address...">
                         <button class="footer__newsletters-btn">Join</button>
